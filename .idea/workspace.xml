@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2811da20-5c5a-43c8-a1a9-0370866d01f9" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/startup.bat" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/startup.sh" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/css/chart_column.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets.log" afterPath="$PROJECT_DIR$/assets.log" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/log.txt" afterPath="$PROJECT_DIR$/log.txt" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -176,12 +174,12 @@
       <option name="presentableId" value="Default" />
       <updated>1503540180571</updated>
       <workItem from="1503540182635" duration="6267000" />
-      <workItem from="1503555688289" duration="4474000" />
+      <workItem from="1503555688289" duration="5071000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="10741000" />
+    <option name="totallyTimeSpent" value="11338000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-11" y="-11" width="3862" height="2122" extended-state="6" />

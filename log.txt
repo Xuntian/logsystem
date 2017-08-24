@@ -789,3 +789,276 @@ network: handle_read stopped, asio msg: End of file. Connection will be closed
 2017-08-24 15:19:05|main|info|npl_page_manager|File C:/Users/lizhiqiang/Desktop/logsystem/www/content.page: modified
 2017-08-24 15:19:05|main|info|npl_page_manager|File C:/Users/lizhiqiang/Desktop/logsystem/www/content.page: modified
 2017-08-24 15:19:05|main|info|npl_page_parser|parse file: www/content.page
+2017-08-24 15:20:26|main|debug|FileSystemWatcher|File C:/Users/lizhiqiang/Desktop/logsystem/www/js/mainController.js___jb_tmp___ is added in dir C:/Users/lizhiqiang/Desktop/logsystem/www/js/
+2017-08-24 15:20:26|main|debug|FileSystemWatcher|File C:/Users/lizhiqiang/Desktop/logsystem/www/js/mainController.js___jb_tmp___ is modified in dir C:/Users/lizhiqiang/Desktop/logsystem/www/js/
+2017-08-24 15:20:26|main|debug|FileSystemWatcher|File C:/Users/lizhiqiang/Desktop/logsystem/www/js is modified in dir C:/Users/lizhiqiang/Desktop/logsystem/www/
+2017-08-24 15:20:26|main|debug|FileSystemWatcher|File C:/Users/lizhiqiang/Desktop/logsystem/www/js/mainController.js is renamed_old_name in dir C:/Users/lizhiqiang/Desktop/logsystem/www/js/
+2017-08-24 15:20:26|main|debug|FileSystemWatcher|File C:/Users/lizhiqiang/Desktop/logsystem/www/js/mainController.js___jb_old___ is renamed_new_name in dir C:/Users/lizhiqiang/Desktop/logsystem/www/js/
+2017-08-24 15:20:26|main|debug|FileSystemWatcher|File C:/Users/lizhiqiang/Desktop/logsystem/www/js is modified in dir C:/Users/lizhiqiang/Desktop/logsystem/www/
+2017-08-24 15:20:26|main|debug|FileSystemWatcher|File C:/Users/lizhiqiang/Desktop/logsystem/www/js/mainController.js___jb_tmp___ is renamed_old_name in dir C:/Users/lizhiqiang/Desktop/logsystem/www/js/
+2017-08-24 15:20:26|main|debug|FileSystemWatcher|File C:/Users/lizhiqiang/Desktop/logsystem/www/js/mainController.js is renamed_new_name in dir C:/Users/lizhiqiang/Desktop/logsystem/www/js/
+2017-08-24 15:20:26|main|debug|FileSystemWatcher|File C:/Users/lizhiqiang/Desktop/logsystem/www/js is modified in dir C:/Users/lizhiqiang/Desktop/logsystem/www/
+2017-08-24 15:20:26|main|debug|FileSystemWatcher|File C:/Users/lizhiqiang/Desktop/logsystem/www/js/mainController.js is modified in dir C:/Users/lizhiqiang/Desktop/logsystem/www/js/
+2017-08-24 15:20:26|main|debug|FileSystemWatcher|File C:/Users/lizhiqiang/Desktop/logsystem/www/js/mainController.js___jb_old___ is removed in dir C:/Users/lizhiqiang/Desktop/logsystem/www/js/
+2017-08-24 15:20:26|main|debug|FileSystemWatcher|File C:/Users/lizhiqiang/Desktop/logsystem/www/js is modified in dir C:/Users/lizhiqiang/Desktop/logsystem/www/
+2017-08-24 15:20:29|wfh|debug|npl_file_handler|file: www/js/maincontroller.js added to mem cache
+2017-08-24 15:20:51|main|debug|FileSystemWatcher|File C:/Users/lizhiqiang/Desktop/logsystem/www/content.page___jb_tmp___ is added in dir C:/Users/lizhiqiang/Desktop/logsystem/www/
+2017-08-24 15:20:51|main|debug|FileSystemWatcher|File C:/Users/lizhiqiang/Desktop/logsystem/www/content.page___jb_tmp___ is modified in dir C:/Users/lizhiqiang/Desktop/logsystem/www/
+2017-08-24 15:20:51|main|debug|FileSystemWatcher|File C:/Users/lizhiqiang/Desktop/logsystem/www/content.page is renamed_old_name in dir C:/Users/lizhiqiang/Desktop/logsystem/www/
+2017-08-24 15:20:51|main|debug|FileSystemWatcher|File C:/Users/lizhiqiang/Desktop/logsystem/www/content.page___jb_old___ is renamed_new_name in dir C:/Users/lizhiqiang/Desktop/logsystem/www/
+2017-08-24 15:20:51|main|debug|FileSystemWatcher|File C:/Users/lizhiqiang/Desktop/logsystem/www/content.page___jb_tmp___ is renamed_old_name in dir C:/Users/lizhiqiang/Desktop/logsystem/www/
+2017-08-24 15:20:51|main|debug|FileSystemWatcher|File C:/Users/lizhiqiang/Desktop/logsystem/www/content.page is renamed_new_name in dir C:/Users/lizhiqiang/Desktop/logsystem/www/
+2017-08-24 15:20:51|main|debug|FileSystemWatcher|File C:/Users/lizhiqiang/Desktop/logsystem/www/content.page is modified in dir C:/Users/lizhiqiang/Desktop/logsystem/www/
+2017-08-24 15:20:51|main|debug|FileSystemWatcher|File C:/Users/lizhiqiang/Desktop/logsystem/www/content.page___jb_old___ is removed in dir C:/Users/lizhiqiang/Desktop/logsystem/www/
+2017-08-24 15:20:54|main|info|npl_page_manager|File C:/Users/lizhiqiang/Desktop/logsystem/www/content.page: modified
+2017-08-24 15:20:54|main|info|npl_page_manager|File C:/Users/lizhiqiang/Desktop/logsystem/www/content.page: modified
+2017-08-24 15:20:54|main|info|npl_page_parser|parse file: www/content.page
+2017-08-24 15:21:03|9608|incoming connection (127.0.0.1/51649) is established and assigned a temporary id (~26). 
+network: handle_read stopped, asio msg: End of file. Connection will be closed 
+2017-08-24 15:21:08|9608|connection closed (127.0.0.1/51649) with id (~26). 
+2017-08-24 15:22:01|main|debug|FileSystemWatcher|File C:/Users/lizhiqiang/Desktop/logsystem/www/content.page___jb_tmp___ is added in dir C:/Users/lizhiqiang/Desktop/logsystem/www/
+2017-08-24 15:22:01|main|debug|FileSystemWatcher|File C:/Users/lizhiqiang/Desktop/logsystem/www/content.page___jb_tmp___ is modified in dir C:/Users/lizhiqiang/Desktop/logsystem/www/
+2017-08-24 15:22:01|main|debug|FileSystemWatcher|File C:/Users/lizhiqiang/Desktop/logsystem/www/content.page is renamed_old_name in dir C:/Users/lizhiqiang/Desktop/logsystem/www/
+2017-08-24 15:22:01|main|debug|FileSystemWatcher|File C:/Users/lizhiqiang/Desktop/logsystem/www/content.page___jb_old___ is renamed_new_name in dir C:/Users/lizhiqiang/Desktop/logsystem/www/
+2017-08-24 15:22:01|main|debug|FileSystemWatcher|File C:/Users/lizhiqiang/Desktop/logsystem/www/content.page___jb_tmp___ is renamed_old_name in dir C:/Users/lizhiqiang/Desktop/logsystem/www/
+2017-08-24 15:22:01|main|debug|FileSystemWatcher|File C:/Users/lizhiqiang/Desktop/logsystem/www/content.page is renamed_new_name in dir C:/Users/lizhiqiang/Desktop/logsystem/www/
+2017-08-24 15:22:01|main|debug|FileSystemWatcher|File C:/Users/lizhiqiang/Desktop/logsystem/www/content.page is modified in dir C:/Users/lizhiqiang/Desktop/logsystem/www/
+2017-08-24 15:22:01|main|debug|FileSystemWatcher|File C:/Users/lizhiqiang/Desktop/logsystem/www/content.page___jb_old___ is removed in dir C:/Users/lizhiqiang/Desktop/logsystem/www/
+2017-08-24 15:22:04|main|info|npl_page_manager|File C:/Users/lizhiqiang/Desktop/logsystem/www/content.page: modified
+2017-08-24 15:22:04|main|info|npl_page_manager|File C:/Users/lizhiqiang/Desktop/logsystem/www/content.page: modified
+2017-08-24 15:22:04|main|info|npl_page_parser|parse file: www/content.page
+network: handle_read stopped, asio msg: End of file. Connection will be closed 
+2017-08-24 15:22:59|9608|connection closed (127.0.0.1/51611) with id (~23). 
+2017-08-24 15:30:43|main|debug|FileSystemWatcher|File C:/Users/lizhiqiang/Desktop/logsystem/www/content.page___jb_tmp___ is added in dir C:/Users/lizhiqiang/Desktop/logsystem/www/
+2017-08-24 15:30:43|main|debug|FileSystemWatcher|File C:/Users/lizhiqiang/Desktop/logsystem/www/content.page___jb_tmp___ is modified in dir C:/Users/lizhiqiang/Desktop/logsystem/www/
+2017-08-24 15:30:43|main|debug|FileSystemWatcher|File C:/Users/lizhiqiang/Desktop/logsystem/www/content.page is renamed_old_name in dir C:/Users/lizhiqiang/Desktop/logsystem/www/
+2017-08-24 15:30:43|main|debug|FileSystemWatcher|File C:/Users/lizhiqiang/Desktop/logsystem/www/content.page___jb_old___ is renamed_new_name in dir C:/Users/lizhiqiang/Desktop/logsystem/www/
+2017-08-24 15:30:43|main|debug|FileSystemWatcher|File C:/Users/lizhiqiang/Desktop/logsystem/www/content.page___jb_tmp___ is renamed_old_name in dir C:/Users/lizhiqiang/Desktop/logsystem/www/
+2017-08-24 15:30:43|main|debug|FileSystemWatcher|File C:/Users/lizhiqiang/Desktop/logsystem/www/content.page is renamed_new_name in dir C:/Users/lizhiqiang/Desktop/logsystem/www/
+2017-08-24 15:30:43|main|debug|FileSystemWatcher|File C:/Users/lizhiqiang/Desktop/logsystem/www/content.page is modified in dir C:/Users/lizhiqiang/Desktop/logsystem/www/
+2017-08-24 15:30:43|main|debug|FileSystemWatcher|File C:/Users/lizhiqiang/Desktop/logsystem/www/content.page___jb_old___ is removed in dir C:/Users/lizhiqiang/Desktop/logsystem/www/
+2017-08-24 15:30:46|main|info|npl_page_manager|File C:/Users/lizhiqiang/Desktop/logsystem/www/content.page: modified
+2017-08-24 15:30:46|main|info|npl_page_manager|File C:/Users/lizhiqiang/Desktop/logsystem/www/content.page: modified
+2017-08-24 15:30:46|main|info|npl_page_parser|parse file: www/content.page
+2017-08-24 15:31:03|main|debug|FileSystemWatcher|File C:/Users/lizhiqiang/Desktop/logsystem/www/content.page___jb_tmp___ is added in dir C:/Users/lizhiqiang/Desktop/logsystem/www/
+2017-08-24 15:31:03|main|debug|FileSystemWatcher|File C:/Users/lizhiqiang/Desktop/logsystem/www/content.page___jb_tmp___ is modified in dir C:/Users/lizhiqiang/Desktop/logsystem/www/
+2017-08-24 15:31:03|main|debug|FileSystemWatcher|File C:/Users/lizhiqiang/Desktop/logsystem/www/content.page is renamed_old_name in dir C:/Users/lizhiqiang/Desktop/logsystem/www/
+2017-08-24 15:31:03|main|debug|FileSystemWatcher|File C:/Users/lizhiqiang/Desktop/logsystem/www/content.page___jb_old___ is renamed_new_name in dir C:/Users/lizhiqiang/Desktop/logsystem/www/
+2017-08-24 15:31:03|main|debug|FileSystemWatcher|File C:/Users/lizhiqiang/Desktop/logsystem/www/content.page___jb_tmp___ is renamed_old_name in dir C:/Users/lizhiqiang/Desktop/logsystem/www/
+2017-08-24 15:31:03|main|debug|FileSystemWatcher|File C:/Users/lizhiqiang/Desktop/logsystem/www/content.page is renamed_new_name in dir C:/Users/lizhiqiang/Desktop/logsystem/www/
+2017-08-24 15:31:03|main|debug|FileSystemWatcher|File C:/Users/lizhiqiang/Desktop/logsystem/www/content.page is modified in dir C:/Users/lizhiqiang/Desktop/logsystem/www/
+2017-08-24 15:31:03|main|debug|FileSystemWatcher|File C:/Users/lizhiqiang/Desktop/logsystem/www/content.page___jb_old___ is removed in dir C:/Users/lizhiqiang/Desktop/logsystem/www/
+2017-08-24 15:31:06|main|info|npl_page_manager|File C:/Users/lizhiqiang/Desktop/logsystem/www/content.page: modified
+2017-08-24 15:31:06|main|info|npl_page_manager|File C:/Users/lizhiqiang/Desktop/logsystem/www/content.page: modified
+2017-08-24 15:31:06|main|info|npl_page_parser|parse file: www/content.page
+2017-08-24 15:31:08|9608|incoming connection (127.0.0.1/52123) is established and assigned a temporary id (~27). 
+2017-08-24 15:31:09|9608|incoming connection (127.0.0.1/52124) is established and assigned a temporary id (~28). 
+network: handle_read stopped, asio msg: End of file. Connection will be closed 
+2017-08-24 15:31:14|9608|connection closed (127.0.0.1/52124) with id (~28). 
+2017-08-24 15:32:11|main|debug|FileSystemWatcher|File C:/Users/lizhiqiang/Desktop/logsystem/www/content.page___jb_tmp___ is added in dir C:/Users/lizhiqiang/Desktop/logsystem/www/
+2017-08-24 15:32:11|main|debug|FileSystemWatcher|File C:/Users/lizhiqiang/Desktop/logsystem/www/content.page___jb_tmp___ is modified in dir C:/Users/lizhiqiang/Desktop/logsystem/www/
+2017-08-24 15:32:11|main|debug|FileSystemWatcher|File C:/Users/lizhiqiang/Desktop/logsystem/www/content.page is renamed_old_name in dir C:/Users/lizhiqiang/Desktop/logsystem/www/
+2017-08-24 15:32:11|main|debug|FileSystemWatcher|File C:/Users/lizhiqiang/Desktop/logsystem/www/content.page___jb_old___ is renamed_new_name in dir C:/Users/lizhiqiang/Desktop/logsystem/www/
+2017-08-24 15:32:11|main|debug|FileSystemWatcher|File C:/Users/lizhiqiang/Desktop/logsystem/www/content.page___jb_tmp___ is renamed_old_name in dir C:/Users/lizhiqiang/Desktop/logsystem/www/
+2017-08-24 15:32:11|main|debug|FileSystemWatcher|File C:/Users/lizhiqiang/Desktop/logsystem/www/content.page is renamed_new_name in dir C:/Users/lizhiqiang/Desktop/logsystem/www/
+2017-08-24 15:32:11|main|debug|FileSystemWatcher|File C:/Users/lizhiqiang/Desktop/logsystem/www/content.page is modified in dir C:/Users/lizhiqiang/Desktop/logsystem/www/
+2017-08-24 15:32:11|main|debug|FileSystemWatcher|File C:/Users/lizhiqiang/Desktop/logsystem/www/content.page___jb_old___ is removed in dir C:/Users/lizhiqiang/Desktop/logsystem/www/
+2017-08-24 15:32:13|main|debug|FileSystemWatcher|File C:/Users/lizhiqiang/Desktop/logsystem/www/content.page___jb_tmp___ is added in dir C:/Users/lizhiqiang/Desktop/logsystem/www/
+2017-08-24 15:32:13|main|debug|FileSystemWatcher|File C:/Users/lizhiqiang/Desktop/logsystem/www/content.page___jb_tmp___ is modified in dir C:/Users/lizhiqiang/Desktop/logsystem/www/
+2017-08-24 15:32:13|main|debug|FileSystemWatcher|File C:/Users/lizhiqiang/Desktop/logsystem/www/content.page is renamed_old_name in dir C:/Users/lizhiqiang/Desktop/logsystem/www/
+2017-08-24 15:32:13|main|debug|FileSystemWatcher|File C:/Users/lizhiqiang/Desktop/logsystem/www/content.page___jb_old___ is renamed_new_name in dir C:/Users/lizhiqiang/Desktop/logsystem/www/
+2017-08-24 15:32:13|main|debug|FileSystemWatcher|File C:/Users/lizhiqiang/Desktop/logsystem/www/content.page___jb_old___ is modified in dir C:/Users/lizhiqiang/Desktop/logsystem/www/
+2017-08-24 15:32:13|main|debug|FileSystemWatcher|File C:/Users/lizhiqiang/Desktop/logsystem/www/content.page___jb_tmp___ is renamed_old_name in dir C:/Users/lizhiqiang/Desktop/logsystem/www/
+2017-08-24 15:32:13|main|debug|FileSystemWatcher|File C:/Users/lizhiqiang/Desktop/logsystem/www/content.page is renamed_new_name in dir C:/Users/lizhiqiang/Desktop/logsystem/www/
+2017-08-24 15:32:13|main|debug|FileSystemWatcher|File C:/Users/lizhiqiang/Desktop/logsystem/www/content.page is modified in dir C:/Users/lizhiqiang/Desktop/logsystem/www/
+2017-08-24 15:32:13|main|debug|FileSystemWatcher|File C:/Users/lizhiqiang/Desktop/logsystem/www/content.page___jb_old___ is removed in dir C:/Users/lizhiqiang/Desktop/logsystem/www/
+2017-08-24 15:32:13|main|info|npl_page_manager|File C:/Users/lizhiqiang/Desktop/logsystem/www/content.page: modified
+2017-08-24 15:32:13|main|info|npl_page_manager|File C:/Users/lizhiqiang/Desktop/logsystem/www/content.page: modified
+2017-08-24 15:32:13|main|info|npl_page_parser|parse file: www/content.page
+2017-08-24 15:32:34|main|debug|FileSystemWatcher|File C:/Users/lizhiqiang/Desktop/logsystem/www/content.page___jb_tmp___ is added in dir C:/Users/lizhiqiang/Desktop/logsystem/www/
+2017-08-24 15:32:34|main|debug|FileSystemWatcher|File C:/Users/lizhiqiang/Desktop/logsystem/www/content.page___jb_tmp___ is modified in dir C:/Users/lizhiqiang/Desktop/logsystem/www/
+2017-08-24 15:32:34|main|debug|FileSystemWatcher|File C:/Users/lizhiqiang/Desktop/logsystem/www/content.page is renamed_old_name in dir C:/Users/lizhiqiang/Desktop/logsystem/www/
+2017-08-24 15:32:34|main|debug|FileSystemWatcher|File C:/Users/lizhiqiang/Desktop/logsystem/www/content.page___jb_old___ is renamed_new_name in dir C:/Users/lizhiqiang/Desktop/logsystem/www/
+2017-08-24 15:32:34|main|debug|FileSystemWatcher|File C:/Users/lizhiqiang/Desktop/logsystem/www/content.page___jb_tmp___ is renamed_old_name in dir C:/Users/lizhiqiang/Desktop/logsystem/www/
+2017-08-24 15:32:34|main|debug|FileSystemWatcher|File C:/Users/lizhiqiang/Desktop/logsystem/www/content.page is renamed_new_name in dir C:/Users/lizhiqiang/Desktop/logsystem/www/
+2017-08-24 15:32:34|main|debug|FileSystemWatcher|File C:/Users/lizhiqiang/Desktop/logsystem/www/content.page is modified in dir C:/Users/lizhiqiang/Desktop/logsystem/www/
+2017-08-24 15:32:34|main|debug|FileSystemWatcher|File C:/Users/lizhiqiang/Desktop/logsystem/www/content.page___jb_old___ is removed in dir C:/Users/lizhiqiang/Desktop/logsystem/www/
+2017-08-24 15:32:37|main|info|npl_page_manager|File C:/Users/lizhiqiang/Desktop/logsystem/www/content.page: modified
+2017-08-24 15:32:37|main|info|npl_page_manager|File C:/Users/lizhiqiang/Desktop/logsystem/www/content.page: modified
+2017-08-24 15:32:37|main|info|npl_page_parser|parse file: www/content.page
+2017-08-24 15:32:40|main|debug|FileSystemWatcher|File C:/Users/lizhiqiang/Desktop/logsystem/www/content.page___jb_tmp___ is added in dir C:/Users/lizhiqiang/Desktop/logsystem/www/
+2017-08-24 15:32:40|main|debug|FileSystemWatcher|File C:/Users/lizhiqiang/Desktop/logsystem/www/content.page___jb_tmp___ is modified in dir C:/Users/lizhiqiang/Desktop/logsystem/www/
+2017-08-24 15:32:40|main|debug|FileSystemWatcher|File C:/Users/lizhiqiang/Desktop/logsystem/www/content.page is renamed_old_name in dir C:/Users/lizhiqiang/Desktop/logsystem/www/
+2017-08-24 15:32:40|main|debug|FileSystemWatcher|File C:/Users/lizhiqiang/Desktop/logsystem/www/content.page___jb_old___ is renamed_new_name in dir C:/Users/lizhiqiang/Desktop/logsystem/www/
+2017-08-24 15:32:40|main|debug|FileSystemWatcher|File C:/Users/lizhiqiang/Desktop/logsystem/www/content.page___jb_old___ is modified in dir C:/Users/lizhiqiang/Desktop/logsystem/www/
+2017-08-24 15:32:40|main|debug|FileSystemWatcher|File C:/Users/lizhiqiang/Desktop/logsystem/www/content.page___jb_tmp___ is renamed_old_name in dir C:/Users/lizhiqiang/Desktop/logsystem/www/
+2017-08-24 15:32:40|main|debug|FileSystemWatcher|File C:/Users/lizhiqiang/Desktop/logsystem/www/content.page is renamed_new_name in dir C:/Users/lizhiqiang/Desktop/logsystem/www/
+2017-08-24 15:32:40|main|debug|FileSystemWatcher|File C:/Users/lizhiqiang/Desktop/logsystem/www/content.page is modified in dir C:/Users/lizhiqiang/Desktop/logsystem/www/
+2017-08-24 15:32:40|main|debug|FileSystemWatcher|File C:/Users/lizhiqiang/Desktop/logsystem/www/content.page___jb_old___ is removed in dir C:/Users/lizhiqiang/Desktop/logsystem/www/
+2017-08-24 15:32:43|main|info|npl_page_manager|File C:/Users/lizhiqiang/Desktop/logsystem/www/content.page: modified
+2017-08-24 15:32:43|main|info|npl_page_manager|File C:/Users/lizhiqiang/Desktop/logsystem/www/content.page: modified
+2017-08-24 15:32:43|main|info|npl_page_parser|parse file: www/content.page
+2017-08-24 15:32:43|main|debug|FileSystemWatcher|File C:/Users/lizhiqiang/Desktop/logsystem/www/content.page___jb_tmp___ is added in dir C:/Users/lizhiqiang/Desktop/logsystem/www/
+2017-08-24 15:32:43|main|debug|FileSystemWatcher|File C:/Users/lizhiqiang/Desktop/logsystem/www/content.page___jb_tmp___ is modified in dir C:/Users/lizhiqiang/Desktop/logsystem/www/
+2017-08-24 15:32:43|main|debug|FileSystemWatcher|File C:/Users/lizhiqiang/Desktop/logsystem/www/content.page is renamed_old_name in dir C:/Users/lizhiqiang/Desktop/logsystem/www/
+2017-08-24 15:32:43|main|debug|FileSystemWatcher|File C:/Users/lizhiqiang/Desktop/logsystem/www/content.page___jb_old___ is renamed_new_name in dir C:/Users/lizhiqiang/Desktop/logsystem/www/
+2017-08-24 15:32:43|main|debug|FileSystemWatcher|File C:/Users/lizhiqiang/Desktop/logsystem/www/content.page___jb_old___ is modified in dir C:/Users/lizhiqiang/Desktop/logsystem/www/
+2017-08-24 15:32:43|main|debug|FileSystemWatcher|File C:/Users/lizhiqiang/Desktop/logsystem/www/content.page___jb_tmp___ is renamed_old_name in dir C:/Users/lizhiqiang/Desktop/logsystem/www/
+2017-08-24 15:32:43|main|debug|FileSystemWatcher|File C:/Users/lizhiqiang/Desktop/logsystem/www/content.page is renamed_new_name in dir C:/Users/lizhiqiang/Desktop/logsystem/www/
+2017-08-24 15:32:43|main|debug|FileSystemWatcher|File C:/Users/lizhiqiang/Desktop/logsystem/www/content.page is modified in dir C:/Users/lizhiqiang/Desktop/logsystem/www/
+2017-08-24 15:32:43|main|debug|FileSystemWatcher|File C:/Users/lizhiqiang/Desktop/logsystem/www/content.page___jb_old___ is removed in dir C:/Users/lizhiqiang/Desktop/logsystem/www/
+2017-08-24 15:32:47|main|info|npl_page_manager|File C:/Users/lizhiqiang/Desktop/logsystem/www/content.page: modified
+2017-08-24 15:32:47|main|info|npl_page_manager|File C:/Users/lizhiqiang/Desktop/logsystem/www/content.page: modified
+2017-08-24 15:32:47|main|info|npl_page_parser|parse file: www/content.page
+2017-08-24 15:33:06|main|debug|FileSystemWatcher|File C:/Users/lizhiqiang/Desktop/logsystem/www/content.page___jb_tmp___ is added in dir C:/Users/lizhiqiang/Desktop/logsystem/www/
+2017-08-24 15:33:06|main|debug|FileSystemWatcher|File C:/Users/lizhiqiang/Desktop/logsystem/www/content.page___jb_tmp___ is modified in dir C:/Users/lizhiqiang/Desktop/logsystem/www/
+2017-08-24 15:33:06|main|debug|FileSystemWatcher|File C:/Users/lizhiqiang/Desktop/logsystem/www/content.page is renamed_old_name in dir C:/Users/lizhiqiang/Desktop/logsystem/www/
+2017-08-24 15:33:06|main|debug|FileSystemWatcher|File C:/Users/lizhiqiang/Desktop/logsystem/www/content.page___jb_old___ is renamed_new_name in dir C:/Users/lizhiqiang/Desktop/logsystem/www/
+2017-08-24 15:33:06|main|debug|FileSystemWatcher|File C:/Users/lizhiqiang/Desktop/logsystem/www/content.page___jb_tmp___ is renamed_old_name in dir C:/Users/lizhiqiang/Desktop/logsystem/www/
+2017-08-24 15:33:06|main|debug|FileSystemWatcher|File C:/Users/lizhiqiang/Desktop/logsystem/www/content.page is renamed_new_name in dir C:/Users/lizhiqiang/Desktop/logsystem/www/
+2017-08-24 15:33:06|main|debug|FileSystemWatcher|File C:/Users/lizhiqiang/Desktop/logsystem/www/content.page is modified in dir C:/Users/lizhiqiang/Desktop/logsystem/www/
+2017-08-24 15:33:06|main|debug|FileSystemWatcher|File C:/Users/lizhiqiang/Desktop/logsystem/www/content.page___jb_old___ is removed in dir C:/Users/lizhiqiang/Desktop/logsystem/www/
+network: handle_read stopped, asio msg: End of file. Connection will be closed 
+2017-08-24 15:33:06|9608|connection closed (127.0.0.1/52123) with id (~27). 
+2017-08-24 15:33:09|main|info|npl_page_manager|File C:/Users/lizhiqiang/Desktop/logsystem/www/content.page: modified
+2017-08-24 15:33:09|main|info|npl_page_manager|File C:/Users/lizhiqiang/Desktop/logsystem/www/content.page: modified
+2017-08-24 15:33:09|main|info|npl_page_parser|parse file: www/content.page
+2017-08-24 15:33:16|main|debug|FileSystemWatcher|File C:/Users/lizhiqiang/Desktop/logsystem/www/content.page___jb_tmp___ is added in dir C:/Users/lizhiqiang/Desktop/logsystem/www/
+2017-08-24 15:33:16|main|debug|FileSystemWatcher|File C:/Users/lizhiqiang/Desktop/logsystem/www/content.page___jb_tmp___ is modified in dir C:/Users/lizhiqiang/Desktop/logsystem/www/
+2017-08-24 15:33:16|main|debug|FileSystemWatcher|File C:/Users/lizhiqiang/Desktop/logsystem/www/content.page is renamed_old_name in dir C:/Users/lizhiqiang/Desktop/logsystem/www/
+2017-08-24 15:33:16|main|debug|FileSystemWatcher|File C:/Users/lizhiqiang/Desktop/logsystem/www/content.page___jb_old___ is renamed_new_name in dir C:/Users/lizhiqiang/Desktop/logsystem/www/
+2017-08-24 15:33:16|main|debug|FileSystemWatcher|File C:/Users/lizhiqiang/Desktop/logsystem/www/content.page___jb_old___ is modified in dir C:/Users/lizhiqiang/Desktop/logsystem/www/
+2017-08-24 15:33:16|main|debug|FileSystemWatcher|File C:/Users/lizhiqiang/Desktop/logsystem/www/content.page___jb_tmp___ is renamed_old_name in dir C:/Users/lizhiqiang/Desktop/logsystem/www/
+2017-08-24 15:33:16|main|debug|FileSystemWatcher|File C:/Users/lizhiqiang/Desktop/logsystem/www/content.page is renamed_new_name in dir C:/Users/lizhiqiang/Desktop/logsystem/www/
+2017-08-24 15:33:16|main|debug|FileSystemWatcher|File C:/Users/lizhiqiang/Desktop/logsystem/www/content.page is modified in dir C:/Users/lizhiqiang/Desktop/logsystem/www/
+2017-08-24 15:33:16|main|debug|FileSystemWatcher|File C:/Users/lizhiqiang/Desktop/logsystem/www/content.page___jb_old___ is removed in dir C:/Users/lizhiqiang/Desktop/logsystem/www/
+2017-08-24 15:33:19|9608|incoming connection (127.0.0.1/52133) is established and assigned a temporary id (~29). 
+2017-08-24 15:33:19|main|info|npl_page_manager|File C:/Users/lizhiqiang/Desktop/logsystem/www/content.page: modified
+2017-08-24 15:33:19|main|info|npl_page_manager|File C:/Users/lizhiqiang/Desktop/logsystem/www/content.page: modified
+2017-08-24 15:33:19|main|info|npl_page_parser|parse file: www/content.page
+2017-08-24 15:34:50|main|debug|FileSystemWatcher|File C:/Users/lizhiqiang/Desktop/logsystem/www/content.page___jb_tmp___ is added in dir C:/Users/lizhiqiang/Desktop/logsystem/www/
+2017-08-24 15:34:50|main|debug|FileSystemWatcher|File C:/Users/lizhiqiang/Desktop/logsystem/www/content.page___jb_tmp___ is modified in dir C:/Users/lizhiqiang/Desktop/logsystem/www/
+2017-08-24 15:34:50|main|debug|FileSystemWatcher|File C:/Users/lizhiqiang/Desktop/logsystem/www/content.page is renamed_old_name in dir C:/Users/lizhiqiang/Desktop/logsystem/www/
+2017-08-24 15:34:50|main|debug|FileSystemWatcher|File C:/Users/lizhiqiang/Desktop/logsystem/www/content.page___jb_old___ is renamed_new_name in dir C:/Users/lizhiqiang/Desktop/logsystem/www/
+2017-08-24 15:34:50|main|debug|FileSystemWatcher|File C:/Users/lizhiqiang/Desktop/logsystem/www/content.page___jb_tmp___ is renamed_old_name in dir C:/Users/lizhiqiang/Desktop/logsystem/www/
+2017-08-24 15:34:50|main|debug|FileSystemWatcher|File C:/Users/lizhiqiang/Desktop/logsystem/www/content.page is renamed_new_name in dir C:/Users/lizhiqiang/Desktop/logsystem/www/
+2017-08-24 15:34:50|main|debug|FileSystemWatcher|File C:/Users/lizhiqiang/Desktop/logsystem/www/content.page is modified in dir C:/Users/lizhiqiang/Desktop/logsystem/www/
+2017-08-24 15:34:50|main|debug|FileSystemWatcher|File C:/Users/lizhiqiang/Desktop/logsystem/www/content.page___jb_old___ is removed in dir C:/Users/lizhiqiang/Desktop/logsystem/www/
+2017-08-24 15:34:53|main|info|npl_page_manager|File C:/Users/lizhiqiang/Desktop/logsystem/www/content.page: modified
+2017-08-24 15:34:53|main|info|npl_page_manager|File C:/Users/lizhiqiang/Desktop/logsystem/www/content.page: modified
+2017-08-24 15:34:53|main|info|npl_page_parser|parse file: www/content.page
+2017-08-24 15:34:55|9608|incoming connection (127.0.0.1/52154) is established and assigned a temporary id (~30). 
+2017-08-24 15:35:16|main|debug|FileSystemWatcher|File C:/Users/lizhiqiang/Desktop/logsystem/www/content.page___jb_tmp___ is added in dir C:/Users/lizhiqiang/Desktop/logsystem/www/
+2017-08-24 15:35:16|main|debug|FileSystemWatcher|File C:/Users/lizhiqiang/Desktop/logsystem/www/content.page___jb_tmp___ is modified in dir C:/Users/lizhiqiang/Desktop/logsystem/www/
+2017-08-24 15:35:16|main|debug|FileSystemWatcher|File C:/Users/lizhiqiang/Desktop/logsystem/www/content.page is renamed_old_name in dir C:/Users/lizhiqiang/Desktop/logsystem/www/
+2017-08-24 15:35:16|main|debug|FileSystemWatcher|File C:/Users/lizhiqiang/Desktop/logsystem/www/content.page___jb_old___ is renamed_new_name in dir C:/Users/lizhiqiang/Desktop/logsystem/www/
+2017-08-24 15:35:16|main|debug|FileSystemWatcher|File C:/Users/lizhiqiang/Desktop/logsystem/www/content.page___jb_tmp___ is renamed_old_name in dir C:/Users/lizhiqiang/Desktop/logsystem/www/
+2017-08-24 15:35:16|main|debug|FileSystemWatcher|File C:/Users/lizhiqiang/Desktop/logsystem/www/content.page is renamed_new_name in dir C:/Users/lizhiqiang/Desktop/logsystem/www/
+2017-08-24 15:35:16|main|debug|FileSystemWatcher|File C:/Users/lizhiqiang/Desktop/logsystem/www/content.page is modified in dir C:/Users/lizhiqiang/Desktop/logsystem/www/
+2017-08-24 15:35:16|main|debug|FileSystemWatcher|File C:/Users/lizhiqiang/Desktop/logsystem/www/content.page___jb_old___ is removed in dir C:/Users/lizhiqiang/Desktop/logsystem/www/
+2017-08-24 15:35:19|main|info|npl_page_manager|File C:/Users/lizhiqiang/Desktop/logsystem/www/content.page: modified
+2017-08-24 15:35:19|main|info|npl_page_manager|File C:/Users/lizhiqiang/Desktop/logsystem/www/content.page: modified
+2017-08-24 15:35:19|main|info|npl_page_parser|parse file: www/content.page
+2017-08-24 15:35:41|main|debug|FileSystemWatcher|File C:/Users/lizhiqiang/Desktop/logsystem/www/content.page___jb_tmp___ is added in dir C:/Users/lizhiqiang/Desktop/logsystem/www/
+2017-08-24 15:35:41|main|debug|FileSystemWatcher|File C:/Users/lizhiqiang/Desktop/logsystem/www/content.page___jb_tmp___ is modified in dir C:/Users/lizhiqiang/Desktop/logsystem/www/
+2017-08-24 15:35:41|main|debug|FileSystemWatcher|File C:/Users/lizhiqiang/Desktop/logsystem/www/content.page is renamed_old_name in dir C:/Users/lizhiqiang/Desktop/logsystem/www/
+2017-08-24 15:35:41|main|debug|FileSystemWatcher|File C:/Users/lizhiqiang/Desktop/logsystem/www/content.page___jb_old___ is renamed_new_name in dir C:/Users/lizhiqiang/Desktop/logsystem/www/
+2017-08-24 15:35:41|main|debug|FileSystemWatcher|File C:/Users/lizhiqiang/Desktop/logsystem/www/content.page___jb_tmp___ is renamed_old_name in dir C:/Users/lizhiqiang/Desktop/logsystem/www/
+2017-08-24 15:35:41|main|debug|FileSystemWatcher|File C:/Users/lizhiqiang/Desktop/logsystem/www/content.page is renamed_new_name in dir C:/Users/lizhiqiang/Desktop/logsystem/www/
+2017-08-24 15:35:41|main|debug|FileSystemWatcher|File C:/Users/lizhiqiang/Desktop/logsystem/www/content.page is modified in dir C:/Users/lizhiqiang/Desktop/logsystem/www/
+2017-08-24 15:35:41|main|debug|FileSystemWatcher|File C:/Users/lizhiqiang/Desktop/logsystem/www/content.page___jb_old___ is removed in dir C:/Users/lizhiqiang/Desktop/logsystem/www/
+2017-08-24 15:35:44|main|info|npl_page_manager|File C:/Users/lizhiqiang/Desktop/logsystem/www/content.page: modified
+2017-08-24 15:35:44|main|info|npl_page_manager|File C:/Users/lizhiqiang/Desktop/logsystem/www/content.page: modified
+2017-08-24 15:35:44|main|info|npl_page_parser|parse file: www/content.page
+2017-08-24 15:35:56|main|debug|FileSystemWatcher|File C:/Users/lizhiqiang/Desktop/logsystem/www/content.page___jb_tmp___ is added in dir C:/Users/lizhiqiang/Desktop/logsystem/www/
+2017-08-24 15:35:56|main|debug|FileSystemWatcher|File C:/Users/lizhiqiang/Desktop/logsystem/www/content.page___jb_tmp___ is modified in dir C:/Users/lizhiqiang/Desktop/logsystem/www/
+2017-08-24 15:35:56|main|debug|FileSystemWatcher|File C:/Users/lizhiqiang/Desktop/logsystem/www/content.page is renamed_old_name in dir C:/Users/lizhiqiang/Desktop/logsystem/www/
+2017-08-24 15:35:56|main|debug|FileSystemWatcher|File C:/Users/lizhiqiang/Desktop/logsystem/www/content.page___jb_old___ is renamed_new_name in dir C:/Users/lizhiqiang/Desktop/logsystem/www/
+2017-08-24 15:35:56|main|debug|FileSystemWatcher|File C:/Users/lizhiqiang/Desktop/logsystem/www/content.page___jb_tmp___ is renamed_old_name in dir C:/Users/lizhiqiang/Desktop/logsystem/www/
+2017-08-24 15:35:56|main|debug|FileSystemWatcher|File C:/Users/lizhiqiang/Desktop/logsystem/www/content.page is renamed_new_name in dir C:/Users/lizhiqiang/Desktop/logsystem/www/
+2017-08-24 15:35:56|main|debug|FileSystemWatcher|File C:/Users/lizhiqiang/Desktop/logsystem/www/content.page is modified in dir C:/Users/lizhiqiang/Desktop/logsystem/www/
+2017-08-24 15:35:56|main|debug|FileSystemWatcher|File C:/Users/lizhiqiang/Desktop/logsystem/www/content.page___jb_old___ is removed in dir C:/Users/lizhiqiang/Desktop/logsystem/www/
+2017-08-24 15:35:59|main|info|npl_page_manager|File C:/Users/lizhiqiang/Desktop/logsystem/www/content.page: modified
+2017-08-24 15:35:59|main|info|npl_page_manager|File C:/Users/lizhiqiang/Desktop/logsystem/www/content.page: modified
+2017-08-24 15:35:59|main|info|npl_page_parser|parse file: www/content.page
+2017-08-24 15:36:08|main|debug|FileSystemWatcher|File C:/Users/lizhiqiang/Desktop/logsystem/www/content.page___jb_tmp___ is added in dir C:/Users/lizhiqiang/Desktop/logsystem/www/
+2017-08-24 15:36:08|main|debug|FileSystemWatcher|File C:/Users/lizhiqiang/Desktop/logsystem/www/content.page___jb_tmp___ is modified in dir C:/Users/lizhiqiang/Desktop/logsystem/www/
+2017-08-24 15:36:08|main|debug|FileSystemWatcher|File C:/Users/lizhiqiang/Desktop/logsystem/www/content.page is renamed_old_name in dir C:/Users/lizhiqiang/Desktop/logsystem/www/
+2017-08-24 15:36:08|main|debug|FileSystemWatcher|File C:/Users/lizhiqiang/Desktop/logsystem/www/content.page___jb_old___ is renamed_new_name in dir C:/Users/lizhiqiang/Desktop/logsystem/www/
+2017-08-24 15:36:08|main|debug|FileSystemWatcher|File C:/Users/lizhiqiang/Desktop/logsystem/www/content.page___jb_old___ is modified in dir C:/Users/lizhiqiang/Desktop/logsystem/www/
+2017-08-24 15:36:08|main|debug|FileSystemWatcher|File C:/Users/lizhiqiang/Desktop/logsystem/www/content.page___jb_tmp___ is renamed_old_name in dir C:/Users/lizhiqiang/Desktop/logsystem/www/
+2017-08-24 15:36:08|main|debug|FileSystemWatcher|File C:/Users/lizhiqiang/Desktop/logsystem/www/content.page is renamed_new_name in dir C:/Users/lizhiqiang/Desktop/logsystem/www/
+2017-08-24 15:36:08|main|debug|FileSystemWatcher|File C:/Users/lizhiqiang/Desktop/logsystem/www/content.page is modified in dir C:/Users/lizhiqiang/Desktop/logsystem/www/
+2017-08-24 15:36:08|main|debug|FileSystemWatcher|File C:/Users/lizhiqiang/Desktop/logsystem/www/content.page___jb_old___ is removed in dir C:/Users/lizhiqiang/Desktop/logsystem/www/
+2017-08-24 15:36:11|main|info|npl_page_manager|File C:/Users/lizhiqiang/Desktop/logsystem/www/content.page: modified
+2017-08-24 15:36:11|main|info|npl_page_manager|File C:/Users/lizhiqiang/Desktop/logsystem/www/content.page: modified
+2017-08-24 15:36:11|main|info|npl_page_parser|parse file: www/content.page
+2017-08-24 15:36:50|main|debug|FileSystemWatcher|File C:/Users/lizhiqiang/Desktop/logsystem/www/content.page___jb_tmp___ is added in dir C:/Users/lizhiqiang/Desktop/logsystem/www/
+2017-08-24 15:36:50|main|debug|FileSystemWatcher|File C:/Users/lizhiqiang/Desktop/logsystem/www/content.page___jb_tmp___ is modified in dir C:/Users/lizhiqiang/Desktop/logsystem/www/
+2017-08-24 15:36:50|main|debug|FileSystemWatcher|File C:/Users/lizhiqiang/Desktop/logsystem/www/content.page is renamed_old_name in dir C:/Users/lizhiqiang/Desktop/logsystem/www/
+2017-08-24 15:36:50|main|debug|FileSystemWatcher|File C:/Users/lizhiqiang/Desktop/logsystem/www/content.page___jb_old___ is renamed_new_name in dir C:/Users/lizhiqiang/Desktop/logsystem/www/
+2017-08-24 15:36:50|main|debug|FileSystemWatcher|File C:/Users/lizhiqiang/Desktop/logsystem/www/content.page___jb_tmp___ is renamed_old_name in dir C:/Users/lizhiqiang/Desktop/logsystem/www/
+2017-08-24 15:36:50|main|debug|FileSystemWatcher|File C:/Users/lizhiqiang/Desktop/logsystem/www/content.page is renamed_new_name in dir C:/Users/lizhiqiang/Desktop/logsystem/www/
+2017-08-24 15:36:50|main|debug|FileSystemWatcher|File C:/Users/lizhiqiang/Desktop/logsystem/www/content.page is modified in dir C:/Users/lizhiqiang/Desktop/logsystem/www/
+2017-08-24 15:36:50|main|debug|FileSystemWatcher|File C:/Users/lizhiqiang/Desktop/logsystem/www/content.page___jb_old___ is removed in dir C:/Users/lizhiqiang/Desktop/logsystem/www/
+network: handle_read stopped, asio msg: End of file. Connection will be closed 
+2017-08-24 15:36:50|9608|connection closed (127.0.0.1/52154) with id (~30). 
+2017-08-24 15:36:53|main|info|npl_page_manager|File C:/Users/lizhiqiang/Desktop/logsystem/www/content.page: modified
+2017-08-24 15:36:53|main|info|npl_page_manager|File C:/Users/lizhiqiang/Desktop/logsystem/www/content.page: modified
+2017-08-24 15:36:53|main|info|npl_page_parser|parse file: www/content.page
+2017-08-24 15:36:53|9608|incoming connection (127.0.0.1/52167) is established and assigned a temporary id (~31). 
+network: handle_read stopped, asio msg: End of file. Connection will be closed 
+2017-08-24 15:36:58|9608|connection closed (127.0.0.1/52167) with id (~31). 
+2017-08-24 15:38:04|main|debug|FileSystemWatcher|File C:/Users/lizhiqiang/Desktop/logsystem/www/content.page___jb_tmp___ is added in dir C:/Users/lizhiqiang/Desktop/logsystem/www/
+2017-08-24 15:38:04|main|debug|FileSystemWatcher|File C:/Users/lizhiqiang/Desktop/logsystem/www/content.page___jb_tmp___ is modified in dir C:/Users/lizhiqiang/Desktop/logsystem/www/
+2017-08-24 15:38:04|main|debug|FileSystemWatcher|File C:/Users/lizhiqiang/Desktop/logsystem/www/content.page is renamed_old_name in dir C:/Users/lizhiqiang/Desktop/logsystem/www/
+2017-08-24 15:38:04|main|debug|FileSystemWatcher|File C:/Users/lizhiqiang/Desktop/logsystem/www/content.page___jb_old___ is renamed_new_name in dir C:/Users/lizhiqiang/Desktop/logsystem/www/
+2017-08-24 15:38:04|main|debug|FileSystemWatcher|File C:/Users/lizhiqiang/Desktop/logsystem/www/content.page___jb_tmp___ is renamed_old_name in dir C:/Users/lizhiqiang/Desktop/logsystem/www/
+2017-08-24 15:38:04|main|debug|FileSystemWatcher|File C:/Users/lizhiqiang/Desktop/logsystem/www/content.page is renamed_new_name in dir C:/Users/lizhiqiang/Desktop/logsystem/www/
+2017-08-24 15:38:04|main|debug|FileSystemWatcher|File C:/Users/lizhiqiang/Desktop/logsystem/www/content.page is modified in dir C:/Users/lizhiqiang/Desktop/logsystem/www/
+2017-08-24 15:38:04|main|debug|FileSystemWatcher|File C:/Users/lizhiqiang/Desktop/logsystem/www/content.page___jb_old___ is removed in dir C:/Users/lizhiqiang/Desktop/logsystem/www/
+2017-08-24 15:38:07|main|info|npl_page_manager|File C:/Users/lizhiqiang/Desktop/logsystem/www/content.page: modified
+2017-08-24 15:38:07|main|info|npl_page_manager|File C:/Users/lizhiqiang/Desktop/logsystem/www/content.page: modified
+2017-08-24 15:38:07|main|info|npl_page_parser|parse file: www/content.page
+2017-08-24 15:38:16|main|debug|FileSystemWatcher|File C:/Users/lizhiqiang/Desktop/logsystem/www/content.page___jb_tmp___ is added in dir C:/Users/lizhiqiang/Desktop/logsystem/www/
+2017-08-24 15:38:16|main|debug|FileSystemWatcher|File C:/Users/lizhiqiang/Desktop/logsystem/www/content.page___jb_tmp___ is modified in dir C:/Users/lizhiqiang/Desktop/logsystem/www/
+2017-08-24 15:38:16|main|debug|FileSystemWatcher|File C:/Users/lizhiqiang/Desktop/logsystem/www/content.page is renamed_old_name in dir C:/Users/lizhiqiang/Desktop/logsystem/www/
+2017-08-24 15:38:16|main|debug|FileSystemWatcher|File C:/Users/lizhiqiang/Desktop/logsystem/www/content.page___jb_old___ is renamed_new_name in dir C:/Users/lizhiqiang/Desktop/logsystem/www/
+2017-08-24 15:38:16|main|debug|FileSystemWatcher|File C:/Users/lizhiqiang/Desktop/logsystem/www/content.page___jb_old___ is modified in dir C:/Users/lizhiqiang/Desktop/logsystem/www/
+2017-08-24 15:38:16|main|debug|FileSystemWatcher|File C:/Users/lizhiqiang/Desktop/logsystem/www/content.page___jb_tmp___ is renamed_old_name in dir C:/Users/lizhiqiang/Desktop/logsystem/www/
+2017-08-24 15:38:16|main|debug|FileSystemWatcher|File C:/Users/lizhiqiang/Desktop/logsystem/www/content.page is renamed_new_name in dir C:/Users/lizhiqiang/Desktop/logsystem/www/
+2017-08-24 15:38:16|main|debug|FileSystemWatcher|File C:/Users/lizhiqiang/Desktop/logsystem/www/content.page is modified in dir C:/Users/lizhiqiang/Desktop/logsystem/www/
+2017-08-24 15:38:16|main|debug|FileSystemWatcher|File C:/Users/lizhiqiang/Desktop/logsystem/www/content.page___jb_old___ is removed in dir C:/Users/lizhiqiang/Desktop/logsystem/www/
+2017-08-24 15:38:20|main|info|npl_page_manager|File C:/Users/lizhiqiang/Desktop/logsystem/www/content.page: modified
+2017-08-24 15:38:20|main|info|npl_page_manager|File C:/Users/lizhiqiang/Desktop/logsystem/www/content.page: modified
+2017-08-24 15:38:20|main|info|npl_page_parser|parse file: www/content.page
+2017-08-24 15:38:42|main|debug|FileSystemWatcher|File C:/Users/lizhiqiang/Desktop/logsystem/www/content.page___jb_tmp___ is added in dir C:/Users/lizhiqiang/Desktop/logsystem/www/
+2017-08-24 15:38:42|main|debug|FileSystemWatcher|File C:/Users/lizhiqiang/Desktop/logsystem/www/content.page___jb_tmp___ is modified in dir C:/Users/lizhiqiang/Desktop/logsystem/www/
+2017-08-24 15:38:42|main|debug|FileSystemWatcher|File C:/Users/lizhiqiang/Desktop/logsystem/www/content.page is renamed_old_name in dir C:/Users/lizhiqiang/Desktop/logsystem/www/
+2017-08-24 15:38:42|main|debug|FileSystemWatcher|File C:/Users/lizhiqiang/Desktop/logsystem/www/content.page___jb_old___ is renamed_new_name in dir C:/Users/lizhiqiang/Desktop/logsystem/www/
+2017-08-24 15:38:42|main|debug|FileSystemWatcher|File C:/Users/lizhiqiang/Desktop/logsystem/www/content.page___jb_tmp___ is renamed_old_name in dir C:/Users/lizhiqiang/Desktop/logsystem/www/
+2017-08-24 15:38:42|main|debug|FileSystemWatcher|File C:/Users/lizhiqiang/Desktop/logsystem/www/content.page is renamed_new_name in dir C:/Users/lizhiqiang/Desktop/logsystem/www/
+2017-08-24 15:38:42|main|debug|FileSystemWatcher|File C:/Users/lizhiqiang/Desktop/logsystem/www/content.page is modified in dir C:/Users/lizhiqiang/Desktop/logsystem/www/
+2017-08-24 15:38:42|main|debug|FileSystemWatcher|File C:/Users/lizhiqiang/Desktop/logsystem/www/content.page___jb_old___ is removed in dir C:/Users/lizhiqiang/Desktop/logsystem/www/
+2017-08-24 15:38:45|main|info|npl_page_manager|File C:/Users/lizhiqiang/Desktop/logsystem/www/content.page: modified
+2017-08-24 15:38:45|main|info|npl_page_manager|File C:/Users/lizhiqiang/Desktop/logsystem/www/content.page: modified
+2017-08-24 15:38:45|main|info|npl_page_parser|parse file: www/content.page
+network: handle_read stopped, asio msg: End of file. Connection will be closed 
+2017-08-24 15:40:22|9608|connection closed (127.0.0.1/52133) with id (~29). 
+2017-08-24 15:40:30|main|debug|FileSystemWatcher|File C:/Users/lizhiqiang/Desktop/logsystem/www/content.page___jb_tmp___ is added in dir C:/Users/lizhiqiang/Desktop/logsystem/www/
+2017-08-24 15:40:30|main|debug|FileSystemWatcher|File C:/Users/lizhiqiang/Desktop/logsystem/www/content.page___jb_tmp___ is modified in dir C:/Users/lizhiqiang/Desktop/logsystem/www/
+2017-08-24 15:40:30|main|debug|FileSystemWatcher|File C:/Users/lizhiqiang/Desktop/logsystem/www/content.page is renamed_old_name in dir C:/Users/lizhiqiang/Desktop/logsystem/www/
+2017-08-24 15:40:30|main|debug|FileSystemWatcher|File C:/Users/lizhiqiang/Desktop/logsystem/www/content.page___jb_old___ is renamed_new_name in dir C:/Users/lizhiqiang/Desktop/logsystem/www/
+2017-08-24 15:40:30|main|debug|FileSystemWatcher|File C:/Users/lizhiqiang/Desktop/logsystem/www/content.page___jb_tmp___ is renamed_old_name in dir C:/Users/lizhiqiang/Desktop/logsystem/www/
+2017-08-24 15:40:30|main|debug|FileSystemWatcher|File C:/Users/lizhiqiang/Desktop/logsystem/www/content.page is renamed_new_name in dir C:/Users/lizhiqiang/Desktop/logsystem/www/
+2017-08-24 15:40:30|main|debug|FileSystemWatcher|File C:/Users/lizhiqiang/Desktop/logsystem/www/content.page is modified in dir C:/Users/lizhiqiang/Desktop/logsystem/www/
+2017-08-24 15:40:30|main|debug|FileSystemWatcher|File C:/Users/lizhiqiang/Desktop/logsystem/www/content.page___jb_old___ is removed in dir C:/Users/lizhiqiang/Desktop/logsystem/www/
+2017-08-24 15:40:33|main|info|npl_page_manager|File C:/Users/lizhiqiang/Desktop/logsystem/www/content.page: modified
+2017-08-24 15:40:33|main|info|npl_page_manager|File C:/Users/lizhiqiang/Desktop/logsystem/www/content.page: modified
+2017-08-24 15:40:33|main|info|npl_page_parser|parse file: www/content.page
+2017-08-24 15:40:38|9608|incoming connection (127.0.0.1/52208) is established and assigned a temporary id (~32). 
+network: handle_read stopped, asio msg: End of file. Connection will be closed 
+2017-08-24 15:42:34|9608|connection closed (127.0.0.1/52208) with id (~32). 
+2017-08-24 15:51:51|9608|incoming connection (127.0.0.1/52534) is established and assigned a temporary id (~33). 
+network: handle_read stopped, asio msg: End of file. Connection will be closed 
+2017-08-24 15:51:56|9608|connection closed (127.0.0.1/52534) with id (~33). 
