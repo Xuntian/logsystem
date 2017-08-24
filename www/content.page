@@ -24,27 +24,7 @@
 
 <script src="/js/app.js"></script>
 <script src="/js/mainController.js"></script>
-
-<script type="text/javascript">
-
-    function initNodes(){
-    var uls = document.getElementsByTagName("ul");
-    var i;
-        for(i = 0; i < uls.length; i++)
-            if(uls[i].id != "root")
-                uls[i].style.display = "none";
-    }
-
-    function clickNode(id){
-    var node = document.getElementById(id);
-        if(node.style.display == "none")
-            node.style.display = "block";
-        else
-            node.style.display = "none";
-        return false;
-    }
-
-</script>
+<script src="/js/dbtree.js"></script>
 
 
 </head>
@@ -69,9 +49,6 @@
 				 <button type="button" class="close" data-dismiss="alert" aria-hidden="true">?</button>
 				<h4>Info</h4> <strong>* Connect database first!</strong>
 			</div>
-
-
-
 
             <div class="input-group" style="width:60%; padding:0 0 0 0;">
                 <span class="input-group-addon">Enter Database Directory:</span>
@@ -297,53 +274,45 @@
                             </a>
                             -->
                             <ul id="root">
-
+                                <!--
                                 <li><a href="" onclick="return clickNode('r2n1')">Root 2</a>
                                     <ul id="r2n1">
                                         <li><a href="" onclick="return clickNode('r2n1n1')">Node 1</a>
                                             <ul id="r2n1n1">
-                                                <li>Node 1
-                                                </li>
-                                                <li>Node 2
-                                                </li>
-                                                <li>Node 3
-                                                </li>
-                                                <li><a href="#">Node 4</a>
-                                                </li>
-                                                <li>Node 5
-                                                </li>
-                                                <li>Node 6
-                                                </li>
-                                                <li>Node 7
-                                                </li>
-                                                <li>Node 8
-                                                </li>
-                                                <li>Node 9
-                                                </li>
+                                                <li>Node 1</li>
+                                                <li>Node 2</li>
+                                                <li>Node 3</li>
+                                                <li><a href="#">Node 4</a></li>
+                                                <li>Node 5</li>
+                                                <li>Node 6</li>
+                                                <li>Node 7</li>
+                                                <li>Node 8</li>
+                                                <li>Node 9</li>
                                             </ul>
                                         </li>
-                                        <li>Node 2
-                                        </li>
-                                        <li>Node 3
-                                        </li>
+                                        <li>Node 2</li>
+                                        <li>Node 3</li>
                                         <li><a href="" onclick="return clickNode('r2n4n1')">Node 4</a>
                                             <ul id="r2n4n1">
-                                                <li>Node 1
-                                                </li>
-                                                <li>Node 2
-                                                </li>
-
+                                                <li>Node 1</li>
+                                                <li>Node 2</li>
                                             </ul>
                                         </li>
-                                        <li>Node 5
-                                        </li>
+                                        <li>Node 5</li>
+                                    </ul>
+                                </li>
+                                -->
+
+                                <li ng-repeat="db in givenTableContent" ng-click="#"><a href="#" onclick="return clickNode(this)">{{db}}</a>
+                                    <ul style="display:none;">
+                                        <li ng-repeat="table in db">{{table}}</li>
                                     </ul>
                                 </li>
                             </ul>
                         </div>
                         <div class="pull-right" style="width:80%; padding:0 0 0 10px;">
                             <table class="table table-striped">
-                                <!-- <caption></caption> -->
+                                <caption style="margin:auto;">{{givenTableName}}</caption>
                                 <thead>
                                 <tr >
                                     <th ng-repeat="item in givenTableItems">{{item}}</th>

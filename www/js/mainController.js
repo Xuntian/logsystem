@@ -21,6 +21,25 @@ app_logsystem.controller('mainCtrl', function ($scope, $rootScope, $http, $uibMo
     $scope.givenTableItems = [11,12,13];
     $scope.givenTableContent = [[11,12,13],[21,22,23],[31,32,33]];
     $scope.Tables = [1,2,3];
+    $scope.dbList = ["db_1","db_2","db_3"];
+    $scope.tableList = ["asd1", "asd2", "asd2"];
+    $scope.givenTableName = "qwe";
+
+    $scope.dbPath = "database/";
+
+    $scope.showCurrentTableList = function () {
+        var node = document.getElementById(id);
+        if(node.style.display == "none")
+            node.style.display = "block";
+        else
+            node.style.display = "none";
+        return false;
+    }
+
+    $scope.getDBList = function ($dbPath) {
+
+        $scope.dbList = ["db_4","db_5","db_6"];
+    }
 
 	$scope.getProcessList = function(){
 		var url = "http://localhost:8099/api/process/list";
