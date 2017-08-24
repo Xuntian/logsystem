@@ -1,0 +1,34 @@
+<?npl
+
+NPL.load("(gl)script/ide/System/os/os.lua");
+local os = commonlib.gettable("System.os");
+
+NPL.load("(gl)script/ide/System/Database/TableDatabase.lua");
+local TableDatabase = commonlib.gettable("System.Database.TableDatabase");
+local db = TableDatabase:new():connect("database/cluster/", function() end);
+
+function node_list()
+	
+	LOG.std(nil, "info", "clusrter", "cluster get nodelist");
+	response:Begin();
+	
+	db.Node:find({}, function(err, rows)
+		wp_send_json({result = rows}, true);
+	end);
+	
+	response:finish();
+
+end
+
+function node_info()
+
+	response:Begin();
+	local cmd = "top -bn 1 | grep -E 'Cpu|KiB Mem' ";
+	
+	local err, re = os.run(cmd);
+	response:send_json({result=err});
+	
+	response:finish();
+end
+
+?>

@@ -1,0 +1,57 @@
+<?npl
+
+WP_USE_MINI_LOADER = true;
+include_once("script/apps/WebServer/admin/wp-main.page");
+
+
+-- Router for log system
+-- LogSystem_ENV = "logsystem";
+-- include_once("./" .. LogSystem_ENV .. "/routes.page");
+
+include_once("./routes.page");
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+--[[
+NPL.load("(gl)script/ide/System/Database/TableDatabase.lua");
+local TableDatabase = commonlib.gettable("System.Database.TableDatabase");
+local db = TableDatabase:new():connect("database/cluster/", function() end);
+
+db.Node:find({ip="127.0.0.1",}, function(err, rows) 
+	if(#rows ~= 0) then 
+		echo("ip: 127.0.0.1 has exised");
+	else
+		db.Node:insertOne(nil, {hostname="node1", ip="127.0.0.1",}, function(err, data) 
+			--LOG.std(nil, "info", "nodedatabase", "node data:"..data);
+			echo(data);
+		end);
+	end
+end);
+
+]]
+
+?>
+
+
+
+
+
+
+
+
+
+

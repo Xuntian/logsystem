@@ -1,0 +1,100 @@
+<?npl
+
+NPL.load("(gl)script/ide/System/os/os.lua");
+local os = commonlib.gettable("System.os");
+
+NPL.load("(gl)script/ide/System/Database/TableDatabase.lua");
+local TableDatabase = commonlib.gettable("System.Database.TableDatabase");
+local db = TableDatabase:new():connect("database/cluster/", function() end);
+
+local givenKillProcessPid = request:get("ToKillPid");
+local cmdScript = request:get("cmd");
+
+NPL.load("(gl)script/ide/System/os/GetUrl.lua");
+
+function cluster_process_list()
+	
+	response:Begin();
+	local clusterProcessList = {};
+	db.Node:find({}, function(err, rows)
+		if(#rows ~= 0) then 
+			for i = 1, #rows do
+				local ip = rows[i]["ip"];
+				if(ip == "127.0.0.1") then 
+					ip = "localhost";
+				end
+				local tempResult = System.os.GetUrl("http://" .. ip .. ":8099/api/process/list");
+				clusterProcessList = table.insert(clusterProcessList, tempResult);
+			end
+			wp_send_json({result=clusterProcessList}, true);
+		end
+		
+	end);
+	response:finish();
+
+
+end
+
+function process_list()
+	
+	response:Begin();
+
+	local cmd = "ps aux | grep npl | grep -v grep";
+	if(cmd) then
+		local err, re = os.run(cmd);
+		
+		response:send_json({result=err});
+	else
+		response:send_json({result="no valid cmd"});
+	end
+
+	
+	response:finish();
+end
+
+function process_new()
+
+	response:Begin();
+	local cmd = "cd ~/NPL && git clone https://github.com/Xuntian/cluster-temp && cd cluster-temp && chmod +x start.sh && ./start.sh";
+	if(cmd) then
+		local err, re = os.run(cmd);
+		
+		response:send_json({result=err});
+	else
+		response:send_json({result="no valid cmd"});
+	end
+	response:finish();
+end
+
+function process_kill()
+	
+	response:Begin();
+	if(givenKillProcessPid) then 
+		local cmd = "kill " .. givenKillProcessPid;
+		if(cmd) then
+			local err, re = os.run(cmd);
+		
+			response:send_json({result=err});
+		else
+			response:send_json({result="no valid cmd"});
+		end
+	end
+	response:finish();
+end
+
+function process_cmd()
+
+	response:Begin();
+	if(cmdScript) then
+		local err, re = os.run(cmdScript);
+	
+		response:send_json({result=err});
+	else
+		response:send_json({result="no valid cmd"});
+	end
+	
+	response:finish();
+
+end
+
+?>

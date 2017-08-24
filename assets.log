@@ -1,0 +1,70 @@
+2017-08-24 14:21:50|6428|CAsyncLoader IO Thread started2017-08-24 14:21:50|9820|Async Processing Thread Local(0) Started
+2017-08-24 14:21:50|7804|Async Processing Thread Asset(1) Started
+2017-08-24 14:21:50|7472|Async Processing Thread Asset(1) Started
+2017-08-24 14:21:50|7396|Async Processing Thread Web(2) Started
+2017-08-24 14:21:50|9336|Async Processing Thread BigFile(3) Started
+2017-08-24 14:21:50|9572|Async Processing Thread AudioFile(4) Started
+2017-08-24 14:21:50|8780|ParaFile.OpenAssetFile using local file:www/webserver.config.xml
+2017-08-24 14:21:58|8780|ParaFile.OpenAssetFile using local file:www/index.page
+2017-08-24 14:21:58|8780|ParaFile.OpenAssetFile using local file:script/apps/WebServer/admin/wp-main.page
+2017-08-24 14:21:58|8780|ParaFile.OpenAssetFile using local file:script/apps/WebServer/admin/wp-includes/functions.page
+2017-08-24 14:21:58|8780|ParaFile.OpenAssetFile using local file:script/apps/WebServer/admin/wp-includes/plugin.page
+2017-08-24 14:21:58|8780|ParaFile.OpenAssetFile using local file:script/apps/WebServer/admin/wp-includes/query.page
+2017-08-24 14:21:58|8780|ParaFile.OpenAssetFile using local file:script/apps/WebServer/admin/wp-includes/general-template.page
+2017-08-24 14:21:58|8780|ParaFile.OpenAssetFile using local file:script/apps/WebServer/admin/wp-includes/http.page
+2017-08-24 14:21:58|8780|ParaFile.OpenAssetFile using local file:www/routes.page
+2017-08-24 14:21:58|8780|ParaFile.OpenAssetFile using local file:www/content.page
+2017-08-24 14:24:48|8780|ParaFile.OpenAssetFile using local file:www/content.page
+2017-08-24 14:42:33|8780|ParaFile.OpenAssetFile using local file:www/content.page
+2017-08-24 14:42:36|8780|ParaFile.OpenAssetFile using local file:www/content.page
+2017-08-24 14:43:52|8780|ParaFile.OpenAssetFile using local file:www/content.page
+2017-08-24 14:44:51|8780|ParaFile.OpenAssetFile using local file:www/content.page
+2017-08-24 14:44:56|8780|ParaFile.OpenAssetFile using local file:www/content.page
+2017-08-24 14:45:05|8780|ParaFile.OpenAssetFile using local file:www/content.page
+2017-08-24 14:45:17|8780|ParaFile.OpenAssetFile using local file:www/content.page
+2017-08-24 14:45:24|8780|ParaFile.OpenAssetFile using local file:www/content.page
+2017-08-24 14:45:33|8780|ParaFile.OpenAssetFile using local file:www/content.page
+2017-08-24 14:45:42|8780|ParaFile.OpenAssetFile using local file:www/content.page
+2017-08-24 14:46:34|8780|ParaFile.OpenAssetFile using local file:www/content.page
+2017-08-24 14:46:42|8780|ParaFile.OpenAssetFile using local file:www/content.page
+2017-08-24 14:47:20|8780|ParaFile.OpenAssetFile using local file:www/content.page
+2017-08-24 14:48:38|8780|ParaFile.OpenAssetFile using local file:www/content.page
+2017-08-24 14:49:08|8780|ParaFile.OpenAssetFile using local file:www/content.page
+2017-08-24 14:49:57|8780|ParaFile.OpenAssetFile using local file:www/content.page
+2017-08-24 14:50:20|8780|ParaFile.OpenAssetFile using local file:www/content.page
+2017-08-24 14:50:32|8780|ParaFile.OpenAssetFile using local file:www/content.page
+2017-08-24 14:50:50|8780|ParaFile.OpenAssetFile using local file:www/content.page
+2017-08-24 14:50:56|8780|ParaFile.OpenAssetFile using local file:www/content.page
+2017-08-24 14:51:06|8780|ParaFile.OpenAssetFile using local file:www/content.page
+2017-08-24 14:51:19|8780|ParaFile.OpenAssetFile using local file:www/content.page
+2017-08-24 14:52:03|8780|ParaFile.OpenAssetFile using local file:www/content.page
+2017-08-24 14:52:09|8780|ParaFile.OpenAssetFile using local file:www/content.page
+2017-08-24 14:52:33|8780|ParaFile.OpenAssetFile using local file:www/content.page
+2017-08-24 14:55:27|8780|ParaFile.OpenAssetFile using local file:www/content.page
+2017-08-24 14:56:42|8780|ParaFile.OpenAssetFile using local file:www/content.page
+2017-08-24 14:57:31|8780|ParaFile.OpenAssetFile using local file:www/content.page
+2017-08-24 14:58:22|8780|ParaFile.OpenAssetFile using local file:www/content.page
+2017-08-24 14:58:29|8780|ParaFile.OpenAssetFile using local file:www/content.page
+2017-08-24 14:58:40|8780|ParaFile.OpenAssetFile using local file:www/content.page
+2017-08-24 14:59:07|8780|ParaFile.OpenAssetFile using local file:www/content.page
+2017-08-24 15:00:11|8780|ParaFile.OpenAssetFile using local file:www/content.page
+2017-08-24 15:04:37|8780|ParaFile.OpenAssetFile using local file:www/content.page
+2017-08-24 15:05:20|8780|ParaFile.OpenAssetFile using local file:www/content.page
+2017-08-24 15:05:39|8780|ParaFile.OpenAssetFile using local file:www/content.page
+2017-08-24 15:05:45|8780|ParaFile.OpenAssetFile using local file:www/content.page
+2017-08-24 15:06:48|10640|ParaFile.OpenAssetFile using local file:www/js/app.js
+2017-08-24 15:06:48|10640|ParaFile.OpenAssetFile using local file:www/js/mainController.js
+2017-08-24 15:08:29|8780|ParaFile.OpenAssetFile using local file:www/content.page
+2017-08-24 15:08:49|8780|ParaFile.OpenAssetFile using local file:www/content.page
+2017-08-24 15:11:22|8780|ParaFile.OpenAssetFile using local file:www/content.page
+2017-08-24 15:11:34|8780|ParaFile.OpenAssetFile using local file:www/content.page
+2017-08-24 15:11:50|8780|ParaFile.OpenAssetFile using local file:www/content.page
+2017-08-24 15:12:51|8780|ParaFile.OpenAssetFile using local file:www/content.page
+2017-08-24 15:12:56|8780|ParaFile.OpenAssetFile using local file:www/content.page
+2017-08-24 15:13:00|10640|ParaFile.OpenAssetFile using local file:www/css/chart_column.css
+2017-08-24 15:13:47|8780|ParaFile.OpenAssetFile using local file:www/content.page
+2017-08-24 15:15:47|8780|ParaFile.OpenAssetFile using local file:www/content.page
+2017-08-24 15:17:48|8780|ParaFile.OpenAssetFile using local file:www/content.page
+2017-08-24 15:18:24|8780|ParaFile.OpenAssetFile using local file:www/content.page
+2017-08-24 15:18:42|8780|ParaFile.OpenAssetFile using local file:www/content.page
+2017-08-24 15:18:54|8780|ParaFile.OpenAssetFile using local file:www/content.page
