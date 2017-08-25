@@ -23,17 +23,44 @@ app_logsystem.controller('mainCtrl', function ($scope, $rootScope, $http, $uibMo
     $scope.Tables = [1,2,3];
     $scope.dbList = ["db_1","db_2","db_3"];
     $scope.tableList = ["asd1", "asd2", "asd2"];
-    $scope.givenTableName = "qwe";
 
     $scope.dbPath = "database/";
+    $scope.givenTableName = "Table Name";
 
-    $scope.showCurrentTableList = function () {
-        var node = document.getElementById(id);
-        if(node.style.display == "none")
-            node.style.display = "block";
-        else
-            node.style.display = "none";
-        return false;
+    $scope.showCurrentTableList = function ($event) {
+
+        var dbItem = $event.target;
+        var tableList = dbItem.getElementsByTagName("ul");
+        for(var j = 0; j < tableList.length; j++){
+            if(tableList[j].style.display == "none")
+                tableList[j].style.display = "block";
+            else
+                tableList[j].style.display = "none";
+        }
+
+        /*
+        var dbList = document.getElementsByClassName("db");
+        for(var i = 0; i < dbList.length; i++){
+            var tableList = dbList[i].getElementsByTagName("ul");
+            for(var j = 0; j < tableList.length; j++){
+                if(tableList[j].style.display == "none")
+                    tableList[j].style.display = "block";
+                else
+                    tableList[j].style.display = "none";
+            }
+        }*/
+    }
+    
+    $scope.showCurrentTableContent = function ($event) {
+        //var tableList = document.getElementsByClassName("table");
+
+        var tableList = document.getElementsByClassName("dbtable");
+        for(var j = 0; j < tableList.length; j++){
+            tableList[j].style.backgroundColor ="transparent";
+        }
+        $event.target.style.backgroundColor = "#BBFFFF";
+        $scope.givenTableName = $event.target.innerHTML;
+        $event.stopPropagation();
     }
 
     $scope.getDBList = function ($dbPath) {

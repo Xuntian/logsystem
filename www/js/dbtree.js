@@ -18,4 +18,8 @@ function clickNode(el){
     return false;
 }
 
+function test(){
+    alert("3333333");
+}
+
 

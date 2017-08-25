@@ -1,46 +1,34 @@
 <?npl
 
---[[
-include_once("./cluster/process.page");
-include_once("./cluster/node.page");
+
+include_once("./logsystem/database.page");
 
 local _url = request:url();
 local _method = request:GetMethod();
 
-
-
-local cluster_api = {
-	{ "^/api/process/list$", "GET", process_list},
-	{ "^/api/process/new$", "GET", process_new},
-	{ "^/api/process/kill$", "PUT", process_kill},
-	{ "^/api/process/cmd$", "PUT", process_cmd},
-	{ "^/api/node/list$", "GET", node_list},
-	{ "^/api/node/info$", "GET", node_info},
-	{ "^/api/process/alist$", "GET", cluster_process_list}
+local db_api = {
+	{ "^/api/db/initdb", "GET", initdb},
+	{ "^/api/db/new$", "GET", process_new},
+	{ "^/api/db/kill$", "PUT", process_kill},
+	{ "^/api/db/cmd$", "PUT", process_cmd},
+	{ "^/api/db/list$", "GET", node_list},
+	{ "^/api/db/info$", "GET", node_info},
+	{ "^/api/db/alist$", "GET", cluster_process_list}
 };
 
-]]
-
-local _url = request:url();
-local _method = request:GetMethod();
 
 if(_url:match("/logsystem"))then
 	include_once("./content.page");
 else
 	
-    include_once("./content.page");
-
-end
-
---[[
-for i = 1, #cluster_api do
-        if (_url:match(cluster_api[i][1]) and _method == cluster_api[i][2]) then
-            cluster_api[i][3]();
+    for i = 1, #db_api do
+        if (_url:match(db_api[i][1]) and _method == db_api[i][2]) then
+            db_api[i][3]();
             return true;
         end
     end
+end
 
-]]
 
 
 ?>
