@@ -1,0 +1,36 @@
+<?npl
+--[[
+
+]]
+
+NPL.load("(gl)script/ide/System/Database/TableDatabase.lua");
+local TableDatabase = commonlib.gettable("System.Database.TableDatabase");
+local db = TableDatabase:new():connect("database/keepwork/", function() end);
+
+function initdb()
+    for i=1, 100 do
+    	db.user:insertOne(nil,
+    		{id = i,
+    		created_at = "2017-08-09 10:04:13",
+    		updated_at = "2017-08-09 10:04:13",
+    		notification_level = "level_"..i,
+    		user_id = "user_"..i,
+    		target_id = "target_id_"..i,
+    		type = "type_"..i,
+    		subtype = "subtype_"..i,
+    		project = "project_"..i,
+    		mod = "mod_"..i,
+    		submod = "submod_"..i,
+    		title = "title_"..i,
+    		info = "info_"..i,
+    		extra_field_1 = "ex_1_"..i,
+    		extra_field_2 = "ex_2_"..i,
+    		extra_field_3 = "ex_3_"..i},
+    		function()
+
+    		end)
+    end
+end
+
+
+
