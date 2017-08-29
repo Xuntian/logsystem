@@ -1,16 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2811da20-5c5a-43c8-a1a9-0370866d01f9" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/css/tree.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets.log" afterPath="$PROJECT_DIR$/assets.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/startup.bat" afterPath="$PROJECT_DIR$/startup.bat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/content.page" afterPath="$PROJECT_DIR$/www/content.page" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/js/dbtree.js" afterPath="$PROJECT_DIR$/www/js/dbtree.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/js/mainController.js" afterPath="$PROJECT_DIR$/www/js/mainController.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/logsystem/database.page" afterPath="$PROJECT_DIR$/www/logsystem/database.page" />
-    </list>
+    <list default="true" id="2811da20-5c5a-43c8-a1a9-0370866d01f9" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -171,7 +162,7 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="673" />
     <option name="y" value="125" />
     <option name="width" value="1300" />
@@ -287,15 +278,15 @@
       <workItem from="1503540182635" duration="6267000" />
       <workItem from="1503555688289" duration="11812000" />
       <workItem from="1503625699181" duration="16857000" />
-      <workItem from="1503975285075" duration="8939000" />
+      <workItem from="1503975285075" duration="8975000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="43875000" />
+    <option name="totallyTimeSpent" value="43911000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-11" y="-11" width="3862" height="2122" extended-state="6" />
+    <frame x="-11" y="-11" width="3862" height="2122" extended-state="7" />
     <layout>
       <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.122135416" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
