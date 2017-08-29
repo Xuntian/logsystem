@@ -8,6 +8,7 @@
 <link href="/plugins/ui-select/select.css" rel="stylesheet" >
 <link href="/plugins/cropper/cropper.min.css">
 <link href="/css/chart_column.css" rel="stylesheet">
+<link href="/css/tree.css" rel="stylesheet">
 
 <script src="/plugins/jquery/jquery.min.js"></script>
 
@@ -26,10 +27,13 @@
 <script src="/js/mainController.js"></script>
 <script src="/js/dbtree.js"></script>
 
+<script src="/plugins/jeasyui/jquery.easyui.min.js"></script>
+<link href="/plugins/jeasyui/themes/default/easyui.css" rel="stylesheet" >
+<link href="/plugins/jeasyui/themes/icon.css" rel="stylesheet" >
 
 </head>
 
-<body style="width:1000px; margin:20px; " ng-app="App_LogSystem">
+<body style="width:100%; margin:20px; " ng-app="App_LogSystem">
 
 <div class="container" ng-controller="mainCtrl">
 	<div class="row clearfix">
@@ -69,7 +73,7 @@
 					 <a href="#Overview" data-toggle="tab">Overview </a>
 				</li>
 				<li class="dropdown pull-right">
-					 <a href="#" data-toggle="dropdown" class="dropdown-toggle">??<strong class="caret"></strong></a>
+					<a href="#" data-toggle="dropdown" class="dropdown-toggle">??<strong class="caret"></strong></a>
 					<ul class="dropdown-menu">
 						<li>
 							 <a href="#">??</a>
@@ -263,14 +267,14 @@
                         <div class="pull-left" style="width:12%;">
                             <a href="#" class="list-group-item active">
                                 <h5 class="list-group-item-heading">
-                                    Database Views
+                                    Database
                                 </h5>
                             </a>
 
-                            <ul id="root" style="padding:10px 0 0 -10px;">
+                            <ul id="root">
                                 <li class="db" ng-repeat="db in givenTableContent" ng-click="showCurrentTableList($event)">{{db}}
                                     <ul style="display:none;">
-                                        <li class="dbtable" ng-repeat="table in db" onclick="#" ng-click="showCurrentTableContent($event)">{{table}}</li>
+                                        <li class="dbtable" ng-repeat="table in db" ng-click="showCurrentTableContent($event)">{{table}}</li>
                                     </ul>
                                 </li>
                             </ul>
@@ -325,6 +329,18 @@
 
 		</div>
 	</div>
+
+<!--
+    <table id="filedir" style="height:600px;width:100%;overflow: auto;" class="easyui-treegrid"
+           url="ajax/world?action=get_world_files&filter=*.db&rootdir="
+           idField="id" treeField="filename" remoteSort="false" singleSelect="true">
+        <thead>
+            <tr>
+                <th field="filename" width="100%" sortable="true">Filename</th>
+            </tr>
+        </thead>
+    </table>
+-->
 
     <a id="modal-783550" href="#modal-container-783550" role="button" class="btn" data-toggle="modal"> test</a>
 

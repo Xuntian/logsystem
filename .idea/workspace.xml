@@ -2,14 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2811da20-5c5a-43c8-a1a9-0370866d01f9" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/logsystem/database.page" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/css/tree.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets.log" afterPath="$PROJECT_DIR$/assets.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/log.txt" afterPath="$PROJECT_DIR$/log.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/startup.bat" afterPath="$PROJECT_DIR$/startup.bat" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/content.page" afterPath="$PROJECT_DIR$/www/content.page" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/js/dbtree.js" afterPath="$PROJECT_DIR$/www/js/dbtree.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/js/mainController.js" afterPath="$PROJECT_DIR$/www/js/mainController.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/routes.page" afterPath="$PROJECT_DIR$/www/routes.page" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/logsystem/database.page" afterPath="$PROJECT_DIR$/www/logsystem/database.page" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -28,18 +28,18 @@
           <file leaf-file-name="index.page" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/www/index.page">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="1160">
-                  <caret line="40" column="13" lean-forward="false" selection-start-line="40" selection-start-column="13" selection-end-line="40" selection-end-column="13" />
+                <state relative-caret-position="1334">
+                  <caret line="46" column="2" lean-forward="false" selection-start-line="46" selection-start-column="2" selection-end-line="46" selection-end-column="2" />
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="routes.page" pinned="false" current-in-tab="true">
+          <file leaf-file-name="routes.page" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/www/routes.page">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="551">
-                  <caret line="19" column="32" lean-forward="true" selection-start-line="19" selection-start-column="32" selection-end-line="19" selection-end-column="32" />
+                <state relative-caret-position="174">
+                  <caret line="6" column="36" lean-forward="false" selection-start-line="6" selection-start-column="36" selection-end-line="6" selection-end-column="36" />
                   <folding />
                 </state>
               </provider>
@@ -48,8 +48,8 @@
           <file leaf-file-name="database.page" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/www/logsystem/database.page">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="261">
-                  <caret line="9" column="17" lean-forward="true" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
+                <state relative-caret-position="1044">
+                  <caret line="36" column="56" lean-forward="true" selection-start-line="36" selection-start-column="56" selection-end-line="36" selection-end-column="56" />
                   <folding />
                 </state>
               </provider>
@@ -58,18 +58,18 @@
           <file leaf-file-name="process.page" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/www/logsystem/process.page">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="928">
-                  <caret line="32" column="22" lean-forward="false" selection-start-line="32" selection-start-column="22" selection-end-line="32" selection-end-column="22" />
+                <state relative-caret-position="812">
+                  <caret line="28" column="60" lean-forward="true" selection-start-line="28" selection-start-column="60" selection-end-line="28" selection-end-column="60" />
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="content.page" pinned="false" current-in-tab="false">
+          <file leaf-file-name="content.page" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/www/content.page">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="1508">
-                  <caret line="280" column="39" lean-forward="false" selection-start-line="280" selection-start-column="39" selection-end-line="280" selection-end-column="39" />
+                <state relative-caret-position="1017">
+                  <caret line="359" column="82" lean-forward="false" selection-start-line="359" selection-start-column="82" selection-end-line="359" selection-end-column="82" />
                   <folding />
                 </state>
               </provider>
@@ -78,12 +78,22 @@
         </leaf>
       </split-first>
       <split-second>
-        <leaf>
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="450">
           <file leaf-file-name="mainController.js" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/www/js/mainController.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="609">
-                  <caret line="33" column="50" lean-forward="true" selection-start-line="33" selection-start-column="50" selection-end-line="33" selection-end-column="50" />
+                <state relative-caret-position="1066">
+                  <caret line="158" column="23" lean-forward="true" selection-start-line="158" selection-start-column="23" selection-end-line="158" selection-end-column="23" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="tree.css" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/www/css/tree.css">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="203">
+                  <caret line="7" column="24" lean-forward="false" selection-start-line="7" selection-start-column="24" selection-end-line="7" selection-end-column="24" />
                   <folding />
                 </state>
               </provider>
@@ -92,8 +102,18 @@
           <file leaf-file-name="dbtree.js" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/www/js/dbtree.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="145">
-                  <caret line="5" column="42" lean-forward="false" selection-start-line="5" selection-start-column="42" selection-end-line="5" selection-end-column="42" />
+                <state relative-caret-position="29">
+                  <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="chart_column.css" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/www/css/chart_column.css">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="1102">
+                  <caret line="53" column="1" lean-forward="false" selection-start-line="49" selection-start-column="0" selection-end-line="53" selection-end-column="1" />
                   <folding />
                 </state>
               </provider>
@@ -103,10 +123,19 @@
       </split-second>
     </splitter>
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="CSS File" />
+      </list>
+    </option>
+  </component>
   <component name="FindInProjectRecents">
     <findStrings>
       <find>content.page</find>
       <find>count</find>
+      <find>os</find>
+      <find>map</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -120,11 +149,12 @@
         <option value="$PROJECT_DIR$/startup.sh" />
         <option value="$PROJECT_DIR$/www/js/app.js" />
         <option value="$PROJECT_DIR$/www/js/test.js" />
-        <option value="$PROJECT_DIR$/www/js/dbtree.js" />
-        <option value="$PROJECT_DIR$/www/js/mainController.js" />
-        <option value="$PROJECT_DIR$/www/content.page" />
-        <option value="$PROJECT_DIR$/www/logsystem/database.page" />
         <option value="$PROJECT_DIR$/www/routes.page" />
+        <option value="$PROJECT_DIR$/www/js/dbtree.js" />
+        <option value="$PROJECT_DIR$/www/logsystem/database.page" />
+        <option value="$PROJECT_DIR$/www/css/tree.css" />
+        <option value="$PROJECT_DIR$/www/content.page" />
+        <option value="$PROJECT_DIR$/www/js/mainController.js" />
       </list>
     </option>
   </component>
@@ -162,8 +192,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -194,6 +224,27 @@
               <item name="www" type="462c0819:PsiDirectoryNode" />
               <item name="logsystem" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="logsystem" type="b2602c69:ProjectViewProjectNode" />
+              <item name="logsystem" type="462c0819:PsiDirectoryNode" />
+              <item name="www" type="462c0819:PsiDirectoryNode" />
+              <item name="plugins" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="logsystem" type="b2602c69:ProjectViewProjectNode" />
+              <item name="logsystem" type="462c0819:PsiDirectoryNode" />
+              <item name="www" type="462c0819:PsiDirectoryNode" />
+              <item name="plugins" type="462c0819:PsiDirectoryNode" />
+              <item name="jeasyui" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="logsystem" type="b2602c69:ProjectViewProjectNode" />
+              <item name="logsystem" type="462c0819:PsiDirectoryNode" />
+              <item name="www" type="462c0819:PsiDirectoryNode" />
+              <item name="plugins" type="462c0819:PsiDirectoryNode" />
+              <item name="jeasyui" type="462c0819:PsiDirectoryNode" />
+              <item name="themes" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -204,6 +255,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="HbShouldOpenHtmlAsHb" value="" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -235,16 +287,17 @@
       <workItem from="1503540182635" duration="6267000" />
       <workItem from="1503555688289" duration="11812000" />
       <workItem from="1503625699181" duration="16857000" />
+      <workItem from="1503975285075" duration="8939000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="34936000" />
+    <option name="totallyTimeSpent" value="43875000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-11" y="-11" width="3862" height="2122" extended-state="6" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.122135416" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.122135416" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -273,6 +326,62 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/www/index.page">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1160">
+          <caret line="40" column="13" lean-forward="false" selection-start-line="40" selection-start-column="13" selection-end-line="40" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/logsystem/database.page">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="261">
+          <caret line="9" column="17" lean-forward="true" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/logsystem/process.page">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="928">
+          <caret line="32" column="22" lean-forward="false" selection-start-line="32" selection-start-column="22" selection-end-line="32" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/content.page">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="8120">
+          <caret line="280" column="39" lean-forward="false" selection-start-line="280" selection-start-column="39" selection-end-line="280" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/routes.page">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="551">
+          <caret line="19" column="32" lean-forward="true" selection-start-line="19" selection-start-column="32" selection-end-line="19" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/js/mainController.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/js/dbtree.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="145">
+          <caret line="5" column="42" lean-forward="false" selection-start-line="5" selection-start-column="42" selection-end-line="5" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/www/index.page">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="348">
@@ -373,13 +482,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/www/css/chart_column.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/www/js/app.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -387,66 +489,81 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/www/logsystem/cluster.page">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/css/chart_column.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1102">
+          <caret line="53" column="1" lean-forward="false" selection-start-line="49" selection-start-column="0" selection-end-line="53" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/www/js/dbtree.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="145">
-          <caret line="5" column="42" lean-forward="false" selection-start-line="5" selection-start-column="42" selection-end-line="5" selection-end-column="42" />
+        <state relative-caret-position="29">
+          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/www/index.page">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1160">
-          <caret line="40" column="13" lean-forward="false" selection-start-line="40" selection-start-column="13" selection-end-line="40" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/logsystem/cluster.page">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/logsystem/process.page">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="928">
-          <caret line="32" column="22" lean-forward="false" selection-start-line="32" selection-start-column="22" selection-end-line="32" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/content.page">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1508">
-          <caret line="280" column="39" lean-forward="false" selection-start-line="280" selection-start-column="39" selection-end-line="280" selection-end-column="39" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/logsystem/database.page">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="261">
-          <caret line="9" column="17" lean-forward="true" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
+        <state relative-caret-position="1334">
+          <caret line="46" column="2" lean-forward="false" selection-start-line="46" selection-start-column="2" selection-end-line="46" selection-end-column="2" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/www/routes.page">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="551">
-          <caret line="19" column="32" lean-forward="true" selection-start-line="19" selection-start-column="32" selection-end-line="19" selection-end-column="32" />
+        <state relative-caret-position="174">
+          <caret line="6" column="36" lean-forward="false" selection-start-line="6" selection-start-column="36" selection-end-line="6" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/logsystem/database.page">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1044">
+          <caret line="36" column="56" lean-forward="true" selection-start-line="36" selection-start-column="56" selection-end-line="36" selection-end-column="56" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/logsystem/process.page">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="812">
+          <caret line="28" column="60" lean-forward="true" selection-start-line="28" selection-start-column="60" selection-end-line="28" selection-end-column="60" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/css/tree.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="203">
+          <caret line="7" column="24" lean-forward="false" selection-start-line="7" selection-start-column="24" selection-end-line="7" selection-end-column="24" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/www/js/mainController.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="609">
-          <caret line="33" column="50" lean-forward="true" selection-start-line="33" selection-start-column="50" selection-end-line="33" selection-end-column="50" />
+        <state relative-caret-position="1066">
+          <caret line="158" column="23" lean-forward="true" selection-start-line="158" selection-start-column="23" selection-end-line="158" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/content.page">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1017">
+          <caret line="359" column="82" lean-forward="false" selection-start-line="359" selection-start-column="82" selection-end-line="359" selection-end-column="82" />
           <folding />
         </state>
       </provider>

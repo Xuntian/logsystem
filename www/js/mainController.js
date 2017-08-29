@@ -142,7 +142,7 @@ app_logsystem.controller('mainCtrl', function ($scope, $rootScope, $http, $uibMo
 
 });
 
-app_cluster.controller('testCtrl', function ($scope, $rootScope, $http) {
+app_logsystem.controller('testCtrl', function ($scope, $rootScope, $http) {
 	$scope.remoteProcessResult = "asd";
 
 	$scope.fun = function(){
@@ -154,7 +154,7 @@ app_cluster.controller('testCtrl', function ($scope, $rootScope, $http) {
 	$scope.fun();
 });
 
-app_cluster.controller('addNodeCtrl', function ($scope, $uibModalInstance, $http) {
+app_logsystem.controller('addNodeCtrl', function ($scope, $uibModalInstance, $http) {
 
     $scope.cancel = function () {
         $uibModalInstance.dismiss('cancel');

@@ -33,4 +33,10 @@ function initdb()
 end
 
 
+function test()
+    wp_send_json({result={"asd1","asd2","asd3"}}, true);
+
+end
+
+
 
