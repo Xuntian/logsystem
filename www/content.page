@@ -1,382 +1,454 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html>
+<!DOCTYPE html>
+<html lang="zh-cn">
 <head>
-<meta charset="UTF-8" />
-<title>NPL Log System</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+    <meta name=title content="来源于keepwork.com">
+    <meta name="site" content="keepwork.com" />
+    <title ng-bind="title">keepwork.com</title>
+    
+    <!-- lib css -->
+    <!--script src="js/lib/jquery/jquery.min.js"></script>
+    <script src="js/lib/jquery.zeroclipboard/jquery.zeroclipboard.min.js"></script-->
+    <!-- 全局配置 -->
+	<!--
+    <script src="js/app/config.js"></script>
+	<link href="assets/css/main.css" rel="stylesheet" type="text/css">
+	<link rel="icon" href="/wiki/assets/imgs/icon/logo.ico" type="image/x-icon" />
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	-->
 
-<link href="/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-<link href="/plugins/ui-select/select.css" rel="stylesheet" >
-<link href="/plugins/cropper/cropper.min.css">
-<link href="/css/chart_column.css" rel="stylesheet">
-<link href="/css/tree.css" rel="stylesheet">
+    <link href="/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/plugins/ui-select/select.css" rel="stylesheet" >
+    <link href="/plugins/cropper/cropper.min.css">
+    <link href="/css/chart_column.css" rel="stylesheet">
+    <link href="/css/tree.css" rel="stylesheet">
 
-<script src="/plugins/jquery/jquery.min.js"></script>
+    <script src="/plugins/jquery/jquery.min.js"></script>
 
-<script src="/plugins/bootstrap/js/bootstrap.min.js"></script>
-<script src="/plugins/angular/angular.min.js"></script>
-<script src="/plugins/angular-ui-bootstrap/ui-bootstrap-tpls.js"></script>
-<script src="/plugins/angular-ui-router/angular-ui-router.min.js"></script>
-<script src="/plugins/bootstrap-treeview/bootstrap-treeview.min.js"></script>
-<script src="/plugins/satellizer/satellizer.min.js"></script>
-<script src="/plugins/angular-file-upload/angular-file-upload.min.js"></script>
-<script src="/plugins/github-api/GitHub.bundle.min.js"></script>
-<script src="/plugins/angular-sanitize/angular-sanitize.min.js"></script>
-<script src="/plugins/ui-select/select.js"></script> 
+    <script src="/plugins/bootstrap/js/bootstrap.min.js"></script>
+    <script src="/plugins/angular/angular.min.js"></script>
+    <script src="/plugins/angular-ui-bootstrap/ui-bootstrap-tpls.js"></script>
+    <script src="/plugins/angular-ui-router/angular-ui-router.min.js"></script>
+    <script src="/plugins/satellizer/satellizer.min.js"></script>
+    <script src="/plugins/angular-file-upload/angular-file-upload.min.js"></script>
+    <script src="/plugins/angular-sanitize/angular-sanitize.min.js"></script>
+    <script src="/plugins/ui-select/select.js"></script>
 
-<script src="/js/app.js"></script>
-<script src="/js/mainController.js"></script>
-<script src="/js/dbtree.js"></script>
+    <script src="/js/app.js"></script>
+    <script src="/js/mainController.js"></script>
 
-<script src="/plugins/jeasyui/jquery.easyui.min.js"></script>
-<link href="/plugins/jeasyui/themes/default/easyui.css" rel="stylesheet" >
-<link href="/plugins/jeasyui/themes/icon.css" rel="stylesheet" >
+    <link href="/css/mainpage.css" rel="stylesheet" >
 
 </head>
 
-<body style="width:100%; margin:20px; " ng-app="App_LogSystem">
-
-<div class="container" ng-controller="mainCtrl">
-	<div class="row clearfix">
-		<div class="col-md-12 column">
-			<div style="margin:20px 0; ">
-                <h1>
-                    NPL Log System
-                </h1>
-                <p>
-                    This is a log management system for TableDB. It can query, retrieval every log item and count items according to our need in visual charts.
-                </p>
-                <p>
-                     <a class="btn btn-primary btn-large" href="https://github.com/Xuntian/logsystem/">Learn more</a>
-                </p>
-            </div>
-			<div class="alert alert-success alert-dismissable" >
-				 <button type="button" class="close" data-dismiss="alert" aria-hidden="true">?</button>
-				<h4>Info</h4> <strong>* Connect database first!</strong>
-			</div>
-
-            <div class="input-group" style="width:60%; padding:0 0 0 0;">
-                <span class="input-group-addon">Enter Database Directory:</span>
-                <input type="text" class="form-control" placeholder="database/npl" ng-model="dbPath" ng-blur="setDBPath()">
-                <span class="input-group-addon">
-                    <input type="button" class="button" style="border: hidden;" ng-click="test2()" value="Connect" />
-                </span>
-            </div>
-
-			<ul class="nav nav-tabs" id="myTab" style="padding:20px 0 0 0;">
-				<li class="active" style="margin: 0px 20px 10px 0px">
-					 <a href="#Search" data-toggle="tab">Search </a>
+<body ng-app="App_LogSystem">
+<h1>后台管理</h1>
+<div ng-controller="mainCtrl" class="container-fluid" style="padding-top:30px">
+	<div class="row">
+		<!--侧边菜单栏   -->
+		<div class="col-sm-2 subnav">
+			<ul class="list-group">
+				<li class="list-group-item">	
+					<div class="panel-heading" ng-show="true">
+						<div>
+							<div class="panel-heading"><strong>后台管理</strong></div>
+						</div>
+						<ul>
+							<li>
+								<div ng-class='getStyleClass("manager")'>
+									<div class="panel-heading" ng-click='getManagerList()'>管理员</div>
+								</div>
+							</li>
+							<li>
+								<div ng-class='getStyleClass("operationLog")'>
+									<div class="panel-heading" ng-click='getoperationLogList()'>操作日志</div>
+								</div>
+							</li>
+						</ul>
+					</div>
 				</li>
-				<li style="margin: 0px 20px 10px 0px">
-					 <a href="#Count" data-toggle="tab">Count </a>
+				<li class="list-group-item">
+					<div class="panel-heading">
+						<div >
+							<div class="panel-heading"><strong>KeepWork管理</strong></div>
+						</div>
+						<ul>
+							<li ng-show="true">
+								<div ng-class='getStyleClass("user")' >
+									<div class="panel-heading" ng-click='getUserList()'>用户</div>
+								</div>
+							</li>
+							<li ng-show="true">
+								<div  ng-class='getStyleClass("site")'>
+									<div class="panel-heading" ng-click='getSiteList()'>网站</div>
+								</div>
+							</li>
+							<li ng-show="true">
+								<div ng-class='getStyleClass("domain")'>
+									<div class="panel-heading" ng-click='getDomainList()'>域名</div>
+								</div>
+							</li>
+							<li ng-show="true">
+								<div ng-class='getStyleClass("fileCheck")'>
+									<div class="panel-heading" ng-click='getFileCheckList()'>文件审核</div>
+								</div>
+							</li>
+							<li ng-show="true">
+								<div ng-class='getStyleClass("vip")'>
+									<div class="panel-heading" ng-click='getVIPList()'>VIP</div>
+								</div>
+							</li>
+						</ul>
+					</div>
 				</li>
-				<li style="margin: 0px 20px 10px 0px">
-					 <a href="#Overview" data-toggle="tab">Overview </a>
+				<li class="list-group-item">
+					<div class="panel-heading"  ng-show="true">
+						<div >
+							<div class="panel-heading" ><strong>数据统计</strong></div>
+						</div>
+						<ul>
+							<li>
+								<div ng-class='getStyleClass("onlineCount")'>
+									<div class="panel-heading" ng-click='clickMenuItem("onlineCount")'>在线统计</div>
+								</div>
+							</li>
+							<li>
+								<div ng-class='getStyleClass("retention")'>
+									<div class="panel-heading" ng-click='clickMenuItem("retention")'>留存分析</div>
+								</div>
+							</li>
+							<li>
+								<div ng-class='getStyleClass("newAccount")'>
+									<div class="panel-heading" ng-click='clickMenuItem("newAccount")'>新用户分析</div>
+								</div>
+							</li>
+							<li>
+								<div ng-class='getStyleClass("pay")'>
+									<div class="panel-heading" ng-click='clickMenuItem("pay")'>支付情况</div>
+								</div>
+							</li>
+						</ul>
+					</div>
 				</li>
-				<li class="dropdown pull-right">
-					<a href="#" data-toggle="dropdown" class="dropdown-toggle">??<strong class="caret"></strong></a>
-					<ul class="dropdown-menu">
-						<li>
-							 <a href="#">??</a>
-						</li>
-						<li>
-							 <a href="#">????</a>
-						</li>
-						<li>
-							 <a href="#">????</a>
-						</li>
-						<li class="divider">
-						</li>
-						<li>
-							 <a href="#">???</a>
-						</li>
-					</ul>
+				<li class="list-group-item">
+					<div class="panel" ng-class='getStyleClass("ServerMonitor")' ng-show="#">
+						<div class="panel-heading" ng-click='clickMenuItem("ServerMonitor")'>
+							<strong>服务器监控</strong>
+						</div>
+					</div>
 				</li>
 			</ul>
+		</div>
+		<!--内容页-->
+		<div class="col-sm-10">
+			<!--管理员-->
+			<div ng-show='selectMenuItem=="manager"'><!--{{{-->
+				<div style="margin: 10px;">
+					<form role="form" class="form-inline">
+						<div class="form-group">
+							<label>管理员ID:</label>
+							<input ng-model="managerSearchById" type="number" class="form-control" placeholder="请输入用户ID">
+						</div>
+						<div class="form-group">
+							<label>管理员用户名:</label>
+							<input ng-model="managerSearchByUsername" type="text" class="form-control" placeholder="请输入用户名">
+						</div>
+						<button class="btn btn-default" ng-click="managerSearch()">查询</button>
+						<button class="btn btn-default pull-right" ng-click="newManager()" >新建管理员账号</button>
+					</form>
+				</div>
+				<table class="table table-hover table-bordered">
+					<thead>
+						<tr>
+							<th>ID</th>
+							<th>用户名</th>
+							<th>显示名</th>
+							<th>邮箱</th>
+							<th>手机</th>
+							<th>权限等级</th>
+							<th>状态</th>
+							<th>操作</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr ng-repeat="x in managerList" ng-hide="x.isDelete">
+							<td>{{x._id}}</td>
+							<td>{{x.username}}</td>
+							<td>{{x.displayName}}</td>
+							<td>{{x.email}}</td>
+							<td>{{x.cellphone}}</td>
+							<td>{{x.roleId}}</td>
+							<td>{{x.state == -1 ? "异常" : "正常"}}</td>
+							<td>
+								<button class="btn btn-default" ng-click="clickEnableUser(x)">{{x.roleId == -1 ? "启用" : "禁用"}}</button>
+								<button class="btn btn-default" ng-click="clickDeleteUser(x)">删除</button>
+								<button class="btn btn-default" ng-click="clickDeleteUser(x)">编辑权限</button>
+								<button class="btn btn-default" ng-click="clickDeleteUser(x)">修改密码</button>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+				<div class="pagination-box">
+					<ul uib-pagination ng-change="getManagerList()"
+						items-per-page='pageSize' previous-text="上一页"
+								next-text="下一页" total-items="totalItems"
+							  ng-model="managerCurrentPage" max-size="5"
+								class="pagination-sm" boundary-link-numbers="true">
+					</ul>
+				</div>
+			</div><!--}}}-->
 
-			<div id="myTabContent" class="tab-content">
-                <div class="tab-pane fade in" id="Search">
-                    <div style="width:100%; padding:20px 0 0 0; ">
-                        <div style="float: left; padding:5px 0 0 0;">
-                            keywords:<input type="text" ng-model="dbPath" ng-blur="setDBPath()">
-                        </div>
-                        <div class="dropdown" style="float: left; padding:0 0 0 30px;">
-                            <button type="button" class="btn dropdown-toggle" id="dropdownMenu1"
-                                    data-toggle="dropdown">
-                                select item
-                                <span class="caret"></span>
-                            </button>
-                            <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
-                                <li role="presentation">
-                                    <a role="menuitem" tabindex="-1" href="#">Java</a>
-                                </li>
-                                <li role="presentation">
-                                    <a role="menuitem" tabindex="-1" href="#">????</a>
-                                </li>
-                                <li role="presentation">
-                                    <a role="menuitem" tabindex="-1" href="#">????/??</a>
-                                </li>
-                                <li role="presentation" class="divider"></li>
-                                <li role="presentation">
-                                    <a role="menuitem" tabindex="-1" href="#">?????</a>
-                                </li>
-                            </ul>
-                        </div>
-                        <div style="float: left; padding:5px 0 0 30px;">
-                            <span>time:</span>
-                            <input type="time" ng-model="dbPath" ng-blur="setDBPath()">
-                            <span>-</span>
-                            <input type="time" ng-model="dbPath" ng-blur="setDBPath()">
+			<!--管理员操作日志-->
+			<div ng-show='selectMenuItem=="operationLog"'>
+				管理员操作日志
+			</div> 
 
+			<!--用户管理-->
+			<div ng-show='selectMenuItem=="user"'><!--{{{-->
 
-                        </div>
-                        <button class="btn btn-prime" ng-click="" style="margin:0 0 0 30px;">Search</button>
-                    </div>
+				<div style="margin: 10px;">
+					<form role="form" class="form-inline">
+						<div class="form-group">
+							<label>
+								用户ID:
+							</label>
+							<input ng-model="userSearchById" type="number" class="form-control" placeholder="请输入用户ID">
+						</div>
+						<div class="form-group">
+							<label>
+								用户名:
+							</label>
+							<input ng-model="userSearchByUsername" type="text" class="form-control" placeholder="请输入用户名">
+						</div>
+						<button class="btn btn-default" ng-click="userSearch()">查询</button>
+					</form>
+				</div>
+				<table class="table table-hover table-bordered">
+					<thead>
+						<tr>
+							<th>ID</th>
+							<th>用户名</th>
+							<th>显示名</th>
+							<th>注册时间</th>
+							<th>网站数</th>
+							<th>粉丝数</th>
+							<th>用户等级</th>
+							<th>状态</th>
+							<th>操作</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr ng-repeat="x in userList" ng-hide="x.isDelete">
+							<td>{{x._id}}</td>
+							<td>{{x.username}}</td>
+							<td>{{x.displayName}}</td>
+							<td>{{x.joindate}}</td>
+							<td>{{x.websiteCount}}</td>
+							<td>{{x.fansCount}}</td>
+							<td>{{x.roleId}}</td>
+							<td>{{x.state == -1 ? "异常" : "正常"}}</td>
+							<td>
+								<button class="btn btn-default" ng-click="clickEnableUser(x)">{{x.roleId == -1 ? "启用" : "禁用"}}</button>
+								<button class="btn btn-default" ng-click="clickDeleteUser(x)">删除</button>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+				<div class="pagination-box">
+					<ul uib-pagination ng-change="getUserList()"
+						items-per-page='pageSize' previous-text="上一页"
+								next-text="下一页" total-items="totalItems"
+							  ng-model="userCurrentPage" max-size="5"
+								class="pagination-sm" boundary-link-numbers="true">
+					</ul>
+				</div>
+			</div><!--}}}-->
 
-                    <div class="pull-right" style="width:100%; padding:10px 0 0 0;">
-                        <table class="table table-striped">
-                            <!-- <caption></caption> -->
-                            <thead>
-                            <tr >
-                                <th ng-repeat="search_item in search_result_item">{{search_item}}</th>
-                            </tr>
-                            </thead>
-                            <tbody>
-                            <tr ng-repeat="search_rows in search_result">
-                                <td ng-repeat="search_element in search_rows">{{search_element}}</td>
-                            </tr>
+			<!--站点管理-->
+			<div ng-show='selectMenuItem=="site"'><!--{{{-->
+				<div style="margin: 10px;">
+					<form role="form" class="form-inline">
+						<div class="form-group">
+							<label>
+								ID:
+							</label>
+							<input ng-model="siteSearchById" type="number" class="form-control" placeholder="请输入网站ID">
+						</div>
+						<div class="form-group">
+							<label>
+								用户名:
+							</label>
+							<input ng-model="siteSearchByUsername" type="text" class="form-control" placeholder="请输入用户名">
+						</div>
+						<div class="form-group">
+							<label>
+								站点名:
+							</label>
+							<input ng-model="siteSearchBySitename" type="text" class="form-control" placeholder="请输入网站名">
+						</div>
+						<button class="btn btn-default" ng-click="siteSearch()">查询</button>
+					</form>
+				</div>
+				<table class="table table-hover table-bordered">
+					<thead>
+						<tr>
+							<th>站点ID</th>
+							<th>站点名</th>
+							<th>显示名</th>
+							<th>用户名</th>
+							<th>网站类别</th>
+							<th>访问次数</th>
+							<th>状态</th>
+							<th>操作</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr ng-repeat="x in siteList" ng-hide="x.isDelete">
+							<td>{{x._id}}</td>
+							<td>{{x.name}}</td>
+							<td>{{x.displayName}}</td>
+							<td>{{x.username}}</td>
+							<td>{{x.categoryName}}</td>
+							<td>{{x.visitCount}}</td>
+							<td>{{x.state == -1 ? "异常" : "正常"}}</td>
+							<td>
+								<button class="btn btn-default" ng-click="clickEnableSite(x)">{{x.state == -1 ? "启用" : "禁用"}}</button>
+								<button class="btn btn-default" ng-click="clickDeleteSite(x)">删除</button>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+				<div class="pagination-box">
+					<ul uib-pagination ng-change="getSiteList()" items-per-page='pageSize' previous-text="上一页"
+																		   next-text="下一页" total-items="totalItems" ng-model="siteCurrentPage" max-size="5"
+																						   class="pagination-sm" boundary-link-numbers="true">
+					</ul>
+				</div>
+			</div><!--}}}-->
 
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
-                <div class="tab-pane fade in" id="Count">
-                    <div style="width:100%; padding:10px 0 0 0; ">
-                        <div class="dropdown" style="float: left; padding:0 0 0 0;">
-                            <button type="button" class="btn dropdown-toggle" id="dropdownMenu2"
-                                    data-toggle="dropdown">
-                                select item
-                                <span class="caret"></span>
-                            </button>
-                            <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu2">
-                                <li role="presentation">
-                                    <a role="menuitem" tabindex="-1" href="#">Java</a>
-                                </li>
-                                <li role="presentation">
-                                    <a role="menuitem" tabindex="-1" href="#">????</a>
-                                </li>
-                                <li role="presentation">
-                                    <a role="menuitem" tabindex="-1" href="#">????/??</a>
-                                </li>
-                                <li role="presentation" class="divider"></li>
-                                <li role="presentation">
-                                    <a role="menuitem" tabindex="-1" href="#">?????</a>
-                                </li>
-                            </ul>
-                        </div>
-                        <div style="float: left; padding:5px 0 0 30px;">
-                            <span>time:</span>
-                            <input type="time" ng-model="dbPath" ng-blur="setDBPath()">
-                            <span>-</span>
-                            <input type="time" ng-model="dbPath" ng-blur="setDBPath()">
-
-                            <button class="btn btn-prime" ng-click="#" style="margin:0 0 0 30px;">Count</button>
-                        </div>
-                    </div>
-                    <div id="bar-chart" style="">
-                        <div class="graph">
-                            <ul class="x-axis">
-                                <li><span>2010</span></li>
-                                <li><span>2012</span></li>
-                                <li><span>2013</span></li>
-                                <li><span>2014</span></li>
-                                <li><span>2015</span></li>
-                            </ul>
-                            <ul class="y-axis">
-                                <li><span>20</span></li>
-                                <li><span>15</span></li>
-                                <li><span>10</span></li>
-                                <li><span>5</span></li>
-                                <li><span>0</span></li>
-                            </ul>
-                            <div class="bars">
-                                <div class="bar-group">
-                                    <div class="bar bar-1 stat-1" style="height: 51%;">
-                                        <span>4080</span>
-                                    </div>
-                                    <div class="bar bar-2 stat-2" style="height: 71%;">
-                                        <span>5680</span>
-                                    </div>
-                                    <div class="bar bar-3 stat-3" style="height: 13%;">
-                                        <span>1040</span>
-                                    </div>
-                                </div>
-
-                                <div class="bar-group">
-                                    <div class="bar bar-4 stat-1" style="height: 76%;">
-                                        <span>6080</span>
-                                    </div>
-                                    <div class="bar bar-5 stat-2" style="height: 86%;">
-                                        <span>6880</span>
-                                    </div>
-                                    <div class="bar bar-6 stat-3" style="height: 22%;">
-                                        <span>1760</span>
-                                    </div>
-                                </div>
-
-                                <div class="bar-group">
-                                    <div class="bar bar-7 stat-1" style="height: 78%;">
-                                        <span>6240</span>
-                                    </div>
-                                    <div class="bar bar-8 stat-2" style="height: 72%;">
-                                        <span>5760</span>
-                                    </div>
-                                    <div class="bar bar-9 stat-3" style="height: 36%;">
-                                        <span>2880</span>
-                                    </div>
-                                </div>
-
-                                <div class="bar-group">
-                                    <div class="bar bar-10 stat-1" style="height: 44%;">
-                                        <span>3520</span>
-                                    </div>
-                                    <div class="bar bar-11 stat-2" style="height: 64%;">
-                                        <span>5120</span>
-                                    </div>
-                                    <div class="bar bar-12 stat-3" style="height: 59%">
-                                        <span>4720</span>
-                                    </div>
-                                </div>
-
-                                <div class="bar-group">
-                                    <div class="bar bar-13 stat-1" style="height: 28%;">
-                                        <span>2240</span>
-                                    </div>
-                                    <div class="bar bar-14 stat-2" style="height: 33%;">
-                                        <span>2640</span>
-                                    </div>
-                                    <div class="bar bar-15 stat-3" style="height: 94%;">
-                                        <span>7520</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="tab-pane fade in active" id="Overview">
-                    <div style="padding:10px 0 0 0;">
-                        <div class="pull-left" style="width:12%;">
-                            <a href="#" class="list-group-item active">
-                                <h5 class="list-group-item-heading">
-                                    Database
-                                </h5>
-                            </a>
-
-                            <ul id="root">
-                                <li class="db" ng-repeat="db in givenTableContent" ng-click="showCurrentTableList($event)">{{db}}
-                                    <ul style="display:none;">
-                                        <li class="dbtable" ng-repeat="table in db" ng-click="showCurrentTableContent($event)">{{table}}</li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="pull-right" style="width:88%; padding:0 0 0 10px;">
-                            <table class="table table-striped">
-                                <caption style="margin:auto; padding:10px 0 0 0;">{{givenTableName}}</caption>
-                                <thead>
-                                <tr >
-                                    <th ng-repeat="item in givenTableItems">{{item}}</th>
-                                </tr>
-                                </thead>
-                                <tbody>
-                                <tr ng-repeat="rows in givenTableContent">
-                                    <td ng-repeat="element in rows">{{element}}</td>
-                                </tr>
-
-                                </tbody>
-                            </table>
-
-                            <ul class="pagination" style="padding:10px 0 0 340px;">
-                                <li>
-                                     <a href="#">Prev</a>
-                                </li>
-                                <li>
-                                     <a href="#">1</a>
-                                </li>
-                                <li>
-                                     <a href="#">2</a>
-                                </li>
-                                <li>
-                                     <a href="#">3</a>
-                                </li>
-                                <li>
-                                     <a href="#">4</a>
-                                </li>
-                                <li>
-                                     <a href="#">5</a>
-                                </li>
-                                <li>
-                                     <a href="#">Next</a>
-                                </li>
-                            </ul>
-                        </div>
-
-
-
-                    </div>
-
-                </div>
+			<!--域名管理  -->
+			<div ng-show='selectMenuItem=="domain"'>
+				<div style="margin: 10px;">
+					<form role="form" class="form-inline">
+						<div class="form-group">
+							<label>
+								域名ID:
+							</label>
+							<input ng-model="domainSearchById" type="text" class="form-control" placeholder="请输入域名ID">
+						</div>
+						<div class="form-group">
+							<label>
+								用户名:
+							</label>
+							<input ng-model="domainSearchByUsername" type="text" class="form-control" placeholder="请输入用户名">
+						</div>
+						<button class="btn btn-default" ng-click="domainSearch()">查询</button>
+					</form>
+				</div>
+				<table class="table table-hover table-bordered">
+					<thead>
+						<tr>
+							<th>ID</th>
+							<th>用户名</th>
+							<th>域名名</th>
+							<th>站点名</th>
+							<th>开始时间</th>
+							<th>到期时间</th>
+							<th>状态</th>
+							<th>操作</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr ng-repeat="x in domainList" ng-hide="x.isDelete">
+							<td>{{x._id}}</td>
+							<td>{{x.username}}</td>
+							<td>{{x.domain}}</td>
+							<td>{{x.sitename}}</td>
+							<td>{{x.startAt}}</td>
+							<td>{{x.endAt}}</td>
+							<td>{{x.state == -1 ? "异常" : "正常"}}</td>
+							<td>
+								<button class="btn btn-default" ng-click="clickEnableUser(x)">{{x.roleId == -1 ? "启用" : "禁用"}}</button>
+								<button class="btn btn-default" ng-click="clickDeleteUser(x)">删除</button>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+				<div class="pagination-box">
+					<ul uib-pagination ng-change="getDomainList()" items-per-page='pageSize' previous-text="上一页"
+																		   next-text="下一页" total-items="totalItems" ng-model="domainCurrentPage" max-size="5"
+																						   class="pagination-sm" boundary-link-numbers="true">
+					</ul>
+				</div>
+			</div>
+			
+			<!--文件审核  -->
+			<div ng-show='selectMenuItem=="fileCheck"'>
+				文件审核
+			</div>
+			
+			<!--VIP管理  -->
+			<div ng-show='selectMenuItem=="vip"'>
+				<div style="margin: 10px;">
+					<form role="form" class="form-inline">
+						<div class="form-group">
+							<label>
+								会员ID:
+							</label>
+							<input ng-model="vipSearchById" type="number" class="form-control" placeholder="请输入域名ID">
+						</div>
+						<div class="form-group">
+							<label>
+								用户名:
+							</label>
+							<input ng-model="vipSearchByUsername" type="text" class="form-control" placeholder="请输入用户名">
+						</div>
+						<button class="btn btn-default" ng-click="vipSearch()">查询</button>
+					</form>
+				</div>
+				<table class="table table-hover table-bordered">
+					<thead>
+						<tr>
+							<th>ID</th>
+							<th>用户名</th>
+							<th>VIP等级</th>
+							<th>开始时间</th>
+							<th>到期时间</th>
+							<th>状态</th>
+							<th>操作</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr ng-repeat="x in VIPList" ng-hide="x.isDelete">
+							<td>{{x._id}}</td>
+							<td>{{x.username}}</td>
+							<td>{{x.vipLevel}}</td>
+							<td>{{x.startDate}}</td>
+							<td>{{x.endDate}}</td>
+							<td>{{x.state == -1 ? "异常" : "正常"}}</td>
+							<td>
+								<button class="btn btn-default" ng-click="clickEnableUser(x)">{{x.roleId == -1 ? "启用" : "禁用"}}</button>
+								<button class="btn btn-default" ng-click="clickDeleteUser(x)">删除</button>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+				<div class="pagination-box">
+					<ul uib-pagination ng-change="getVIPList()" items-per-page='pageSize' previous-text="上一页"
+																		   next-text="下一页" total-items="totalItems" ng-model="VIPCurrentPage" max-size="5"
+																						   class="pagination-sm" boundary-link-numbers="true">
+					</ul>
+				</div>
 			</div>
 
 		</div>
 	</div>
-
-<!--
-    <table id="filedir" style="height:600px;width:100%;overflow: auto;" class="easyui-treegrid"
-           url="ajax/world?action=get_world_files&filter=*.db&rootdir="
-           idField="id" treeField="filename" remoteSort="false" singleSelect="true">
-        <thead>
-            <tr>
-                <th field="filename" width="100%" sortable="true">Filename</th>
-            </tr>
-        </thead>
-    </table>
--->
-
-    <a id="modal-783550" href="#modal-container-783550" role="button" class="btn" data-toggle="modal"> test</a>
-
-    <div class="modal fade" id="modal-container-783550" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                     <button type="button" class="close" data-dismiss="modal" aria-hidden="true">?</button>
-                    <h4 class="modal-title" id="myModalLabel">
-                        ??
-                    </h4>
-                </div>
-                <div class="modal-body">
-                    ??...
-                </div>
-                <div class="modal-footer">
-                     <button type="button" class="btn btn-default" data-dismiss="modal">??</button> <button type="button" class="btn btn-primary">??</button>
-                </div>
-            </div>
-
-        </div>
-
-    </div>
-
-
-
-    <div class="progress">
-        <div class="progress-bar progress-success">
-        </div>
-    </div>
-
-
 </div>
 
 
-
 </body>
-
 </html>

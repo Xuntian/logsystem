@@ -1,0 +1,382 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+<meta charset="UTF-8" />
+<title>NPL Log System</title>
+
+<link href="/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<link href="/plugins/ui-select/select.css" rel="stylesheet" >
+<link href="/plugins/cropper/cropper.min.css">
+<link href="/css/chart_column.css" rel="stylesheet">
+<link href="/css/tree.css" rel="stylesheet">
+
+<script src="/plugins/jquery/jquery.min.js"></script>
+
+<script src="/plugins/bootstrap/js/bootstrap.min.js"></script>
+<script src="/plugins/angular/angular.min.js"></script>
+<script src="/plugins/angular-ui-bootstrap/ui-bootstrap-tpls.js"></script>
+<script src="/plugins/angular-ui-router/angular-ui-router.min.js"></script>
+<script src="/plugins/bootstrap-treeview/bootstrap-treeview.min.js"></script>
+<script src="/plugins/satellizer/satellizer.min.js"></script>
+<script src="/plugins/angular-file-upload/angular-file-upload.min.js"></script>
+<script src="/plugins/github-api/GitHub.bundle.min.js"></script>
+<script src="/plugins/angular-sanitize/angular-sanitize.min.js"></script>
+<script src="/plugins/ui-select/select.js"></script> 
+
+<script src="/js/app.js"></script>
+<script src="/js/mainController.js"></script>
+<script src="/js/dbtree.js"></script>
+
+<script src="/plugins/jeasyui/jquery.easyui.min.js"></script>
+<link href="/plugins/jeasyui/themes/default/easyui.css" rel="stylesheet" >
+<link href="/plugins/jeasyui/themes/icon.css" rel="stylesheet" >
+
+</head>
+
+<body style="width:100%; margin:20px; " ng-app="App_LogSystem">
+
+<div class="container" ng-controller="mainCtrl">
+	<div class="row clearfix">
+		<div class="col-md-12 column">
+			<div style="margin:20px 0; ">
+                <h1>
+                    后台管理
+                </h1>
+                <p>
+                    This is a log management system for TableDB. It can query, retrieval every log item and count items according to our need in visual charts.
+                </p>
+                <p>
+                     <a class="btn btn-primary btn-large" href="https://github.com/Xuntian/logsystem/">Learn more</a>
+                </p>
+            </div>
+			<div class="alert alert-success alert-dismissable" >
+				 <button type="button" class="close" data-dismiss="alert" aria-hidden="true">?</button>
+				<h4>Info</h4> <strong>* Connect database first!</strong>
+			</div>
+
+            <div class="input-group" style="width:60%; padding:0 0 0 0;">
+                <span class="input-group-addon">Enter Database Directory:</span>
+                <input type="text" class="form-control" placeholder="database/npl" ng-model="dbPath" ng-blur="setDBPath()">
+                <span class="input-group-addon">
+                    <input type="button" class="button" style="border: hidden;" ng-click="test2()" value="Connect" />
+                </span>
+            </div>
+
+			<ul class="nav nav-tabs" id="myTab" style="padding:20px 0 0 0;">
+				<li class="active" style="margin: 0px 20px 10px 0px">
+					 <a href="#Search" data-toggle="tab">Search </a>
+				</li>
+				<li style="margin: 0px 20px 10px 0px">
+					 <a href="#Count" data-toggle="tab">Count </a>
+				</li>
+				<li style="margin: 0px 20px 10px 0px">
+					 <a href="#Overview" data-toggle="tab">Overview </a>
+				</li>
+				<li class="dropdown pull-right">
+					<a href="#" data-toggle="dropdown" class="dropdown-toggle">??<strong class="caret"></strong></a>
+					<ul class="dropdown-menu">
+						<li>
+							 <a href="#">??</a>
+						</li>
+						<li>
+							 <a href="#">????</a>
+						</li>
+						<li>
+							 <a href="#">????</a>
+						</li>
+						<li class="divider">
+						</li>
+						<li>
+							 <a href="#">???</a>
+						</li>
+					</ul>
+				</li>
+			</ul>
+
+			<div id="myTabContent" class="tab-content">
+                <div class="tab-pane fade in" id="Search">
+                    <div style="width:100%; padding:20px 0 0 0; ">
+                        <div style="float: left; padding:5px 0 0 0;">
+                            keywords:<input type="text" ng-model="dbPath" ng-blur="setDBPath()">
+                        </div>
+                        <div class="dropdown" style="float: left; padding:0 0 0 30px;">
+                            <button type="button" class="btn dropdown-toggle" id="dropdownMenu1"
+                                    data-toggle="dropdown">
+                                select item
+                                <span class="caret"></span>
+                            </button>
+                            <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+                                <li role="presentation">
+                                    <a role="menuitem" tabindex="-1" href="#">Java</a>
+                                </li>
+                                <li role="presentation">
+                                    <a role="menuitem" tabindex="-1" href="#">????</a>
+                                </li>
+                                <li role="presentation">
+                                    <a role="menuitem" tabindex="-1" href="#">????/??</a>
+                                </li>
+                                <li role="presentation" class="divider"></li>
+                                <li role="presentation">
+                                    <a role="menuitem" tabindex="-1" href="#">?????</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div style="float: left; padding:5px 0 0 30px;">
+                            <span>time:</span>
+                            <input type="time" ng-model="dbPath" ng-blur="setDBPath()">
+                            <span>-</span>
+                            <input type="time" ng-model="dbPath" ng-blur="setDBPath()">
+
+
+                        </div>
+                        <button class="btn btn-prime" ng-click="" style="margin:0 0 0 30px;">Search</button>
+                    </div>
+
+                    <div class="pull-right" style="width:100%; padding:10px 0 0 0;">
+                        <table class="table table-striped">
+                            <!-- <caption></caption> -->
+                            <thead>
+                            <tr >
+                                <th ng-repeat="search_item in search_result_item">{{search_item}}</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr ng-repeat="search_rows in search_result">
+                                <td ng-repeat="search_element in search_rows">{{search_element}}</td>
+                            </tr>
+
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="tab-pane fade in" id="Count">
+                    <div style="width:100%; padding:10px 0 0 0; ">
+                        <div class="dropdown" style="float: left; padding:0 0 0 0;">
+                            <button type="button" class="btn dropdown-toggle" id="dropdownMenu2"
+                                    data-toggle="dropdown">
+                                select item
+                                <span class="caret"></span>
+                            </button>
+                            <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu2">
+                                <li role="presentation">
+                                    <a role="menuitem" tabindex="-1" href="#">Java</a>
+                                </li>
+                                <li role="presentation">
+                                    <a role="menuitem" tabindex="-1" href="#">????</a>
+                                </li>
+                                <li role="presentation">
+                                    <a role="menuitem" tabindex="-1" href="#">????/??</a>
+                                </li>
+                                <li role="presentation" class="divider"></li>
+                                <li role="presentation">
+                                    <a role="menuitem" tabindex="-1" href="#">?????</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div style="float: left; padding:5px 0 0 30px;">
+                            <span>time:</span>
+                            <input type="time" ng-model="dbPath" ng-blur="setDBPath()">
+                            <span>-</span>
+                            <input type="time" ng-model="dbPath" ng-blur="setDBPath()">
+
+                            <button class="btn btn-prime" ng-click="#" style="margin:0 0 0 30px;">Count</button>
+                        </div>
+                    </div>
+                    <div id="bar-chart" style="">
+                        <div class="graph">
+                            <ul class="x-axis">
+                                <li><span>2010</span></li>
+                                <li><span>2012</span></li>
+                                <li><span>2013</span></li>
+                                <li><span>2014</span></li>
+                                <li><span>2015</span></li>
+                            </ul>
+                            <ul class="y-axis">
+                                <li><span>20</span></li>
+                                <li><span>15</span></li>
+                                <li><span>10</span></li>
+                                <li><span>5</span></li>
+                                <li><span>0</span></li>
+                            </ul>
+                            <div class="bars">
+                                <div class="bar-group">
+                                    <div class="bar bar-1 stat-1" style="height: 51%;">
+                                        <span>4080</span>
+                                    </div>
+                                    <div class="bar bar-2 stat-2" style="height: 71%;">
+                                        <span>5680</span>
+                                    </div>
+                                    <div class="bar bar-3 stat-3" style="height: 13%;">
+                                        <span>1040</span>
+                                    </div>
+                                </div>
+
+                                <div class="bar-group">
+                                    <div class="bar bar-4 stat-1" style="height: 76%;">
+                                        <span>6080</span>
+                                    </div>
+                                    <div class="bar bar-5 stat-2" style="height: 86%;">
+                                        <span>6880</span>
+                                    </div>
+                                    <div class="bar bar-6 stat-3" style="height: 22%;">
+                                        <span>1760</span>
+                                    </div>
+                                </div>
+
+                                <div class="bar-group">
+                                    <div class="bar bar-7 stat-1" style="height: 78%;">
+                                        <span>6240</span>
+                                    </div>
+                                    <div class="bar bar-8 stat-2" style="height: 72%;">
+                                        <span>5760</span>
+                                    </div>
+                                    <div class="bar bar-9 stat-3" style="height: 36%;">
+                                        <span>2880</span>
+                                    </div>
+                                </div>
+
+                                <div class="bar-group">
+                                    <div class="bar bar-10 stat-1" style="height: 44%;">
+                                        <span>3520</span>
+                                    </div>
+                                    <div class="bar bar-11 stat-2" style="height: 64%;">
+                                        <span>5120</span>
+                                    </div>
+                                    <div class="bar bar-12 stat-3" style="height: 59%">
+                                        <span>4720</span>
+                                    </div>
+                                </div>
+
+                                <div class="bar-group">
+                                    <div class="bar bar-13 stat-1" style="height: 28%;">
+                                        <span>2240</span>
+                                    </div>
+                                    <div class="bar bar-14 stat-2" style="height: 33%;">
+                                        <span>2640</span>
+                                    </div>
+                                    <div class="bar bar-15 stat-3" style="height: 94%;">
+                                        <span>7520</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade in active" id="Overview">
+                    <div style="padding:10px 0 0 0;">
+                        <div class="pull-left" style="width:12%;">
+                            <a href="#" class="list-group-item active">
+                                <h5 class="list-group-item-heading">
+                                    Database
+                                </h5>
+                            </a>
+
+                            <ul id="root">
+                                <li class="db" ng-repeat="db in givenTableContent" ng-click="showCurrentTableList($event)">{{db}}
+                                    <ul style="display:none;">
+                                        <li class="dbtable" ng-repeat="table in db" ng-click="showCurrentTableContent($event)">{{table}}</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="pull-right" style="width:88%; padding:0 0 0 10px;">
+                            <table class="table table-striped">
+                                <caption style="margin:auto; padding:10px 0 0 0;">{{givenTableName}}</caption>
+                                <thead>
+                                <tr >
+                                    <th ng-repeat="item in givenTableItems">{{item}}</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr ng-repeat="rows in givenTableContent">
+                                    <td ng-repeat="element in rows">{{element}}</td>
+                                </tr>
+
+                                </tbody>
+                            </table>
+
+                            <ul class="pagination" style="padding:10px 0 0 340px;">
+                                <li>
+                                     <a href="#">Prev</a>
+                                </li>
+                                <li>
+                                     <a href="#">1</a>
+                                </li>
+                                <li>
+                                     <a href="#">2</a>
+                                </li>
+                                <li>
+                                     <a href="#">3</a>
+                                </li>
+                                <li>
+                                     <a href="#">4</a>
+                                </li>
+                                <li>
+                                     <a href="#">5</a>
+                                </li>
+                                <li>
+                                     <a href="#">Next</a>
+                                </li>
+                            </ul>
+                        </div>
+
+
+
+                    </div>
+
+                </div>
+			</div>
+
+		</div>
+	</div>
+
+<!--
+    <table id="filedir" style="height:600px;width:100%;overflow: auto;" class="easyui-treegrid"
+           url="ajax/world?action=get_world_files&filter=*.db&rootdir="
+           idField="id" treeField="filename" remoteSort="false" singleSelect="true">
+        <thead>
+            <tr>
+                <th field="filename" width="100%" sortable="true">Filename</th>
+            </tr>
+        </thead>
+    </table>
+-->
+
+    <a id="modal-783550" href="#modal-container-783550" role="button" class="btn" data-toggle="modal"> test</a>
+
+    <div class="modal fade" id="modal-container-783550" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                     <button type="button" class="close" data-dismiss="modal" aria-hidden="true">?</button>
+                    <h4 class="modal-title" id="myModalLabel">
+                        ??
+                    </h4>
+                </div>
+                <div class="modal-body">
+                    ??...
+                </div>
+                <div class="modal-footer">
+                     <button type="button" class="btn btn-default" data-dismiss="modal">??</button> <button type="button" class="btn btn-primary">??</button>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+    <div class="progress">
+        <div class="progress-bar progress-success">
+        </div>
+    </div>
+
+
+</div>
+
+
+
+</body>
+
+</html>

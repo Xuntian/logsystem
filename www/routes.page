@@ -1,11 +1,9 @@
 <?npl
 
 
+--[[
+
 include_once("./logsystem/database.page");
-
-local _url = request:url();
-local _method = request:GetMethod();
-
 local db_api = {
 	{ "^/api/db/initdb", "GET", initdb},
 	{ "^/api/db/new$", "GET", process_new},
@@ -16,17 +14,13 @@ local db_api = {
 	{ "^/api/db/alist$", "GET", cluster_process_list}
 };
 
+]]
 
-if(_url:match("/logsystem"))then
-	include_once("./content.page");
-else
-	
-    for i = 1, #db_api do
-        if (_url:match(db_api[i][1]) and _method == db_api[i][2]) then
-            db_api[i][3]();
-            return true;
-        end
-    end
+local _url = request:url();
+local _method = request:GetMethod();
+
+if(_url:match("/management"))then
+	include_once("./management/index.page");
 end
 
 

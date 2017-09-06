@@ -1,182 +1,210 @@
 app_logsystem.controller('mainCtrl', function ($scope, $rootScope, $http, $uibModal) {
+	
+	var urlPrefix = "/wiki/js/mod/admin/js/";
+	var tableName = "user";
+	$scope.selectMenuItem = "manager";
+	$scope.pageSize = 15;
+	$scope.managerCurrentPage = 1;
+	$scope.operationLogCurrentPage = 1;
+	$scope.userCurrentPage = 1;
+	$scope.siteCurrentPage = 1;
+	$scope.domainCurrentPage = 1;
+	$scope.fileCheckCurrentPage = 1;
+	$scope.VIPCurrentPage = 1;
+	$scope.totalItems = 0;
+	$scope.data = [];
+	$scope.test = [];
+	//$scope.roleId = 10;
+	
+	$scope.managerSearchById = "";
+	$scope.managerSearchByUsername = "";
 
-	$scope.processList = new Array("p1", "p2", "p3");
-    $scope.hostIP = "127.0.0.1";
-    $scope.hostPort = "8099";
-	$scope.cmdRunResult = "enter your command line script...";
-	$scope.nodeList = new Array();
-	$scope.currentNode = $scope.nodeList[0];
-	$scope.currentNodeInfo = "hello, this is node 127.0.0.1";
-	$scope.cmd = "pwd";
+	// 确保为管理员
+	/*
+	function ensureAdminAuth() {
+		if (!Account.isAuthenticated()) {
+			util.go(urlPrefix + "login");
+			return;
+		}
 
-    $scope.keywords = "";
-    $scope.search_item = "";
-    $scope.search_startTime = "";
-    $scope.search_endTime = "";
-    $scope.search_result_item = [1,2,3];
-    $scope.search_result = [[11,12,13],[21,22,23],[31,32,33]];
-    $scope.count_item = "";
-    $scope.count_startTime = "";
-    $scope.count_endTime = "";
-    $scope.givenTableItems = [11,12,13];
-    $scope.givenTableContent = [[11,12,13],[21,22,23],[31,32,33]];
-    $scope.Tables = [1,2,3];
-    $scope.dbList = ["db_1","db_2","db_3"];
-    $scope.tableList = ["asd1", "asd2", "asd2"];
+		var payload = $auth.getPayload();
+		$scope.roleId = payload.roleId;
+		
+		if (!payload.isAdmin) {
+			util.go(urlPrefix + "login");
+		}
+	}*/
 
-    $scope.dbPath = "database/";
-    $scope.givenTableName = "Table Name";
-
-    $scope.showCurrentTableList = function ($event) {
-
-        var dbItem = $event.target;
-        var tableList = dbItem.getElementsByTagName("ul");
-        for(var j = 0; j < tableList.length; j++){
-            if(tableList[j].style.display == "none")
-                tableList[j].style.display = "block";
-            else
-                tableList[j].style.display = "none";
-        }
-
-        /*
-        var dbList = document.getElementsByClassName("db");
-        for(var i = 0; i < dbList.length; i++){
-            var tableList = dbList[i].getElementsByTagName("ul");
-            for(var j = 0; j < tableList.length; j++){
-                if(tableList[j].style.display == "none")
-                    tableList[j].style.display = "block";
-                else
-                    tableList[j].style.display = "none";
-            }
-        }*/
-    }
-    
-    $scope.showCurrentTableContent = function ($event) {
-        //var tableList = document.getElementsByClassName("table");
-
-        var tableList = document.getElementsByClassName("dbtable");
-        for(var j = 0; j < tableList.length; j++){
-            tableList[j].style.backgroundColor ="transparent";
-        }
-        $event.target.style.backgroundColor = "#BBFFFF";
-        $scope.givenTableName = $event.target.innerHTML;
-        $event.stopPropagation();
-    }
-
-    $scope.getDBList = function ($dbPath) {
-
-        $scope.dbList = ["db_4","db_5","db_6"];
-    }
-
-	$scope.getProcessList = function(){
-		var url = "http://localhost:8099/api/process/list";
-		$http.get(url).then(function (response) {
-            $scope.processList = response.data.result.split("\n");
-        });
+	/*
+	function init() {
+		ensureAdminAuth();
+		$scope.getManagerList();
+		//$scope.clickMenuItem($scope.selectMenuItem);
 	}
-	$scope.getProcessList();
+	*/
+	
+	//$scope.$watch('$viewContentLoaded', init);
 
-    $scope.killGivenProcess = function($event){
-	var givenProcessInfo = $event.target.innerHTML;
-	var givenPid = givenProcessInfo.split("  ")[11];
 
-	var killProcessConfirm = confirm("Sure to kill process " + givenPid + " ?");
-	if(killProcessConfirm){
-		var url = "http://localhost:8099/api/process/kill";
-		$http.put(url, {ToKillPid : givenPid}).then(function (response) {
-			if(response){
-				alert("Process " + givenPid + " has closed!");
-				$scope.getProcessList();
-			}
+	$scope.getStyleClass = function (item) {
+		if ($scope.selectMenuItem == item) {
+			return "panel-primary";
+		}
+		return;
+	}
+	
+	$scope.modifyPasswd = fucntion(){
+		
+	}
+
+	/*
+	管理员
+	*/
+	// 获取管理员列表
+	$scope.getManagerList = function (){
+		//alert("asdasdasdasd");
+		$scope.selectMenuItem = "manager";
+		$scope.managerSearchById;
+		$scope.managerSearchByUsername = "";
+		util.post(config.apiUrlPrefix + "admin/getManagerList", {
+			page:$scope.managerCurrentPage,
+			pageSize:$scope.pageSize,
+		}, function (data) {
+			data = data || {};
+			$scope.managerList = data.managerList || [];
+			$scope.totalItems = data.total || 0;
 		});
 	}
-        
-    }
-
-    $scope.runCmdScript = function(){
-        var url = "http://localhost:8099/api/process/cmd";
-        $http.put(url, {cmd : $scope.cmd}).then(function (response) {
-            $scope.cmdRunResult = response.data.result;
-        });
-    }
-
-    $scope.newProcess = function(){
-		var url = "http://localhost:8099/api/process/new";
-        $http.get(url).then(function (response) {
-		    if(response){
-				alert("New process success ");
-				$scope.getProcessList();
-			}
-        });
-    }
-
-    $scope.getNodeList = function(){
-        var url = "http://localhost:8099/api/node/list";
-        $http.get(url).then(function (response) {
-            $scope.nodeList = response.data.result;
-			$scope.nodeList.splice(0, $scope.nodelist.length);
-            for (var i = 0; i < response.data.result.length; i++) {
-                $scope.nodeList.push(response.data.result[i]);
-            }
-
-        });
-    }
-	$scope.getNodeList();
-
-    $scope.addNode = function(){
-        $uibModal.open({
-            templateUrl: "addNode.html",
-            controller: "addNodeCtrl",
-
-        });
-    }
-
-    $scope.getGivenNodeInfo = function(){
-        var url = "http://localhost:8099/api/node/info";
-        $http.get(url).then(function (response) {
-            $scope.currentNodeInfo =response.data.result;
-			//alert($scope.currentNodeInfo.split(" "));
-        });
-    }
-
-
-});
-
-app_logsystem.controller('testCtrl', function ($scope, $rootScope, $http) {
-	$scope.remoteProcessResult = "asd";
-
-	$scope.fun = function(){
-		var url = "http://localhost:8099/api/process/list";
-		$http.get(url).then(function (response){
-			$scope.remoteProcessResult = response.data;
+	
+	// 搜索管理员账号
+	$scope.managerSearch = function (){
+		//util.post(config.apiUrlPrefix + "tabledb/query", {
+		util.post(config.apiUrlPrefix + "admin/managerSearch", {
+			_id:$scope.managerSearchById,
+			username:$scope.managerSearchByUsername,
+		}, function (data) {
+			data = data || {};
+			$scope.managerList = data.searchManagerList ;
+			$scope.totalItems = data.total || 0;
 		});
 	}
-	$scope.fun();
-});
-
-app_logsystem.controller('addNodeCtrl', function ($scope, $uibModalInstance, $http) {
-
-    $scope.cancel = function () {
-        $uibModalInstance.dismiss('cancel');
-    }
-
-    $scope.newIP = "";
-    $scope.AddNodeProgressText = "Enter new node IP address";
-    $scope.test = function () {
-        alert(123);
-    }
-
-    $scope.addNodeSubmit = function () {
-        if ($scope.newIP == "") {
-            alert("IP address can not be null");
-        }else{
-        	var url = "";
-            $http.get(url).then(function (response){
-                $scope.remoteProcessResult = response.data;
-            });
-        }
-
-    }
+	
+	$scope.newManager = function (){
+		
+	}
+	
+	/*
+	管理员操作日志
+	*/
+	// 操作日志列表
+	$scope.getOperationLogList = function(){
+		$scope.selectMenuItem = "operationLog";
+	}
+	
+	/*
+		keepwork
+	*/
+	// 获取用户列表
+	$scope.getUserList = function (){
+		$scope.selectMenuItem = "user";
+		util.post(config.apiUrlPrefix + "admin/getUserList", {
+			page:$scope.userCurrentPage,
+			pageSize:$scope.pageSize,
+		}, function (data) {
+			data = data || {};
+			$scope.userList = data.userList || [];
+			$scope.totalItems = data.total || 0;
+		});
+	}
+	//搜索用户
+	$scope.userSearch = function (){
+		$scope.query = {
+			_id:$scope.userSearchById,
+			username:$scope.userSearchByUsername,
+		};
+		util.post(config.apiUrlPrefix + "tabledb/query", {
+			tableName:"user",
+			page:$scope.userCurrentPage,
+			pageSize:$scope.pageSize,
+			query:$scope.query,
+		}, function (data) {
+			data = data || {};
+			$scope.userList = data.data || [];
+			$scope.totalItems = data.total || 0;
+		});
+	}
+	
+	$scope.getDomainList = function (){
+		//alert("asdasdasdasd");
+		$scope.selectMenuItem = "domain";
+		util.post(config.apiUrlPrefix + "admin/getDomainList", {
+			page:$scope.domainCurrentPage,
+			pageSize:$scope.pageSize,
+		}, function (data) {
+			data = data || {};
+			$scope.domainList = data.domainList || [];
+			$scope.totalItems = data.total || 0;
+		});
+	}
+	//搜索域名
+	$scope.domainSearchById;
+	$scope.domainSearchByUsername = "";
+	$scope.domainSearchByDomain = "";
+	$scope.domainSearch = function (){
+		var username = $scope.domainSearchByUsername == "" ? undefined : $scope.domainSearchByUsername;
+		var domain = $scope.domainSearchByDomain == "" ? undefined : $scope.domainSearchByDomain;
+		$scope.query = {
+			_id:$scope.domainSearchById,
+			username:username,
+			domain:domain,
+		};
+		util.post(config.apiUrlPrefix + "tabledb/query", {
+			tableName:"website_domain",
+			page:$scope.userCurrentPage,
+			pageSize:$scope.pageSize,
+			query:$scope.query,
+		}, function (data) {
+			data = data || {};
+			$scope.domainList = data.data || [];
+			$scope.totalItems = data.total || 0;
+		});
+	}
+	//获取VIP列表
+	$scope.getVIPList = function (){
+		//alert("asdasdasdasd");
+		$scope.selectMenuItem = "vip";
+		util.post(config.apiUrlPrefix + "admin/getVIPList", {
+			page:$scope.VIPCurrentPage,
+			pageSize:$scope.pageSize,
+		}, function (data) {
+			data = data || {};
+			$scope.VIPList = data.VIPList || [];
+			$scope.totalItems = data.total || 0;
+		});
+	}
+	//搜索VIP
+	$scope.vipSearchById;
+	$scope.vipSearchByUsername = "";
+	$scope.vipSearch = function (){
+		var username = $scope.vipSearchByUsername == "" ? undefined : $scope.vipSearchByUsername;
+		$scope.query = {
+			_id:$scope.vipSearchById,
+			username:username,
+		};
+		util.post(config.apiUrlPrefix + "tabledb/query", {
+			tableName:"vip",
+			page:$scope.VIPCurrentPage,
+			pageSize:$scope.pageSize,
+			query:$scope.query,
+		}, function (data) {
+			data = data || {};
+			$scope.VIPList = data.data || [];
+			$scope.totalItems = data.total || 0;
+		});
+	}
+		
+	
+	
 });
 
 

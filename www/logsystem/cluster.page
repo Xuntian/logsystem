@@ -2,5 +2,4 @@
 
 NPL.load("(gl)script/ide/System/os/GetUrl.lua");
 
-function cluster_
 ?>
